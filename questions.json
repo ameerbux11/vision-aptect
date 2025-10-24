@@ -1,0 +1,3641 @@
+{
+    "Full-Stack Web Development": {
+      "easy": [
+        {
+          "id": "fsw-e-1",
+          "question": "Which HTML tag is used to insert an image?",
+          "options": ["<img>", "<image>", "<picture>", "<src>"],
+          "answer": 0,
+          "time": 60
+        },
+        {
+          "id": "fsw-e-2",
+          "question": "Which CSS property controls the text size?",
+          "options": ["font-style", "text-size", "font-size", "size"],
+          "answer": 2,
+          "time": 60
+        },
+        {
+          "id": "fsw-e-3",
+          "question": "What does the 'href' attribute in the <a> tag specify?",
+          "options": ["The color of the link", "The destination URL", "The size of the link", "The hover effect"],
+          "answer": 1,
+          "time": 60
+        },
+        {
+          "id": "fsw-e-4",
+          "question": "Which HTTP method is typically used to retrieve data?",
+          "options": ["POST", "GET", "PUT", "DELETE"],
+          "answer": 1,
+          "time": 60
+        },
+        {
+          "id": "fsw-e-5",
+          "question": "Which symbol is used for comments in CSS?",
+          "options": ["// comment", "# comment", "/* comment */", "<!-- comment -->"],
+          "answer": 2,
+          "time": 60
+        },
+        {
+          "id": "fsw-e-6",
+          "question": "In JavaScript, what does '===' mean?",
+          "options": ["Equal in value", "Equal in value and type", "Not equal", "Assignment"],
+          "answer": 1,
+          "time": 60
+        },
+        {
+          "id": "fsw-e-7",
+          "question": "Which database is commonly paired with JavaScript in MERN stack?",
+          "options": ["MySQL", "PostgreSQL", "MongoDB", "SQLite"],
+          "answer": 2,
+          "time": 60
+        },
+        {
+          "id": "fsw-e-8",
+          "question": "Which part of the stack handles user interface?",
+          "options": ["Frontend", "Backend", "Database", "Server"],
+          "answer": 0,
+          "time": 60
+        },
+        {
+          "id": "fsw-e-9",
+          "question": "Which HTML tag is used for the largest heading?",
+          "options": ["<h1>", "<heading>", "<h6>", "<head>"],
+          "answer": 0,
+          "time": 60
+        },
+        {
+          "id": "fsw-e-10",
+          "question": "Which tool is commonly used for version control?",
+          "options": ["Git", "Docker", "Nginx", "Node.js"],
+          "answer": 0,
+          "time": 60
+        }
+      ],
+      "normal": [
+        {
+          "id": "fsw-n-1",
+          "question": "Which HTTP status code means 'Not Found'?",
+          "options": ["200", "301", "404", "500"],
+          "answer": 2,
+          "time": 55
+        },
+        {
+          "id": "fsw-n-2",
+          "question": "Which CSS layout system is best for two-dimensional layouts?",
+          "options": ["Flexbox", "Grid", "Float", "Position"],
+          "answer": 1,
+          "time": 55
+        },
+        {
+          "id": "fsw-n-3",
+          "question": "What is the role of Express.js in a Node.js application?",
+          "options": ["Database management", "Routing and middleware", "UI rendering", "Version control"],
+          "answer": 1,
+          "time": 55
+        },
+        {
+          "id": "fsw-n-4",
+          "question": "Which command initializes a new Git repository?",
+          "options": ["git start", "git init", "git create", "git new"],
+          "answer": 1,
+          "time": 55
+        },
+        {
+          "id": "fsw-n-5",
+          "question": "In React, what does 'props' stand for?",
+          "options": ["Properties", "Prototypes", "Processes", "Programs"],
+          "answer": 0,
+          "time": 55
+        },
+        {
+          "id": "fsw-n-6",
+          "question": "Which database query language is used in MongoDB?",
+          "options": ["SQL", "NoSQL", "MQL (Mongo Query Language)", "CQL"],
+          "answer": 2,
+          "time": 55
+        },
+        {
+          "id": "fsw-n-7",
+          "question": "What does 'npm' stand for?",
+          "options": ["Node Package Manager", "New Programming Method", "Network Package Module", "None of these"],
+          "answer": 0,
+          "time": 55
+        },
+        {
+          "id": "fsw-n-8",
+          "question": "Which of these is NOT a JavaScript framework?",
+          "options": ["React", "Angular", "Django", "Vue"],
+          "answer": 2,
+          "time": 55
+        },
+        {
+          "id": "fsw-n-9",
+          "question": "What is the main purpose of REST API?",
+          "options": ["To design user interfaces", "To connect frontend and backend using HTTP", "To build databases", "To deploy apps"],
+          "answer": 1,
+          "time": 55
+        },
+        {
+          "id": "fsw-n-10",
+          "question": "Which file usually defines dependencies in a Node.js project?",
+          "options": ["index.js", "server.js", "package.json", "config.js"],
+          "answer": 2,
+          "time": 55
+        }
+      ],
+      "hard": [
+        {
+          "id": "fsw-h-1",
+          "question": "What is the main difference between SQL and NoSQL databases?",
+          "options": ["SQL is schema-less, NoSQL is schema-based", "SQL uses structured schema, NoSQL is flexible", "Both are identical", "NoSQL cannot store large data"],
+          "answer": 1,
+          "time": 45
+        },
+        {
+          "id": "fsw-h-2",
+          "question": "What is the purpose of 'useEffect' hook in React?",
+          "options": ["Manage UI state", "Perform side effects like API calls", "Create components", "Handle props"],
+          "answer": 1,
+          "time": 45
+        },
+        {
+          "id": "fsw-h-3",
+          "question": "Which technique helps prevent SQL injection attacks?",
+          "options": ["Data replication", "Prepared statements", "Database indexing", "Foreign keys"],
+          "answer": 1,
+          "time": 45
+        },
+        {
+          "id": "fsw-h-4",
+          "question": "Which part of the stack usually handles authentication?",
+          "options": ["Frontend", "Backend", "Database", "Version control"],
+          "answer": 1,
+          "time": 45
+        },
+        {
+          "id": "fsw-h-5",
+          "question": "What is the purpose of middleware in Express.js?",
+          "options": ["Styling the UI", "Handling requests/responses", "Database storage", "Creating components"],
+          "answer": 1,
+          "time": 45
+        },
+        {
+          "id": "fsw-h-6",
+          "question": "Which React feature improves performance by avoiding unnecessary renders?",
+          "options": ["React.memo", "React.cloneElement", "React.forwardRef", "React.lazy"],
+          "answer": 0,
+          "time": 45
+        },
+        {
+          "id": "fsw-h-7",
+          "question": "Which design pattern is followed in MVC architecture?",
+          "options": ["Model-View-Controller", "Memory-Variable-Cache", "Main-Visual-Core", "Module-View-Class"],
+          "answer": 0,
+          "time": 45
+        },
+        {
+          "id": "fsw-h-8",
+          "question": "Which of these is a containerization tool often used in full-stack development?",
+          "options": ["GitHub", "Docker", "Jenkins", "Kubernetes"],
+          "answer": 1,
+          "time": 45
+        },
+        {
+          "id": "fsw-h-9",
+          "question": "Which HTTP status code indicates unauthorized access?",
+          "options": ["200", "401", "403", "500"],
+          "answer": 1,
+          "time": 45
+        },
+        {
+          "id": "fsw-h-10",
+          "question": "Which feature does GraphQL provide over REST APIs?",
+          "options": ["Faster databases", "Schema flexibility and querying only needed data", "Better CSS styling", "Auto-deployment"],
+          "answer": 1,
+          "time": 45
+        }
+      ]
+    }
+    ,"Data Science & Analytics": {
+  "easy": [
+    {
+      "id": "ds-e-1",
+      "question": "What is the first step in the data science process?",
+      "options": ["Data visualization", "Data cleaning", "Understanding the problem", "Model deployment"],
+      "answer": 2,
+      "time": 60
+    },
+    {
+      "id": "ds-e-2",
+      "question": "Which of these is a type of data?",
+      "options": ["Qualitative", "Quantitative", "Both A and B", "Neither"],
+      "answer": 2,
+      "time": 60
+    },
+    {
+      "id": "ds-e-3",
+      "question": "What does CSV stand for?",
+      "options": ["Comma-Separated Values", "Common Source Variable", "Central Storage View", "Code Syntax Variable"],
+      "answer": 0,
+      "time": 60
+    },
+    {
+      "id": "ds-e-4",
+      "question": "Which Python library is widely used for data analysis?",
+      "options": ["NumPy", "Pandas", "Matplotlib", "TensorFlow"],
+      "answer": 1,
+      "time": 60
+    },
+    {
+      "id": "ds-e-5",
+      "question": "What is the main purpose of data visualization?",
+      "options": ["Storing data", "Cleaning data", "Presenting insights clearly", "Collecting data"],
+      "answer": 2,
+      "time": 60
+    },
+    {
+      "id": "ds-e-6",
+      "question": "Which of the following is an example of structured data?",
+      "options": ["Audio recordings", "Social media posts", "Spreadsheets", "Images"],
+      "answer": 2,
+      "time": 60
+    },
+    {
+      "id": "ds-e-7",
+      "question": "What does the term 'dataset' refer to?",
+      "options": ["A single number", "A collection of related data", "A type of algorithm", "A statistical formula"],
+      "answer": 1,
+      "time": 60
+    },
+    {
+      "id": "ds-e-8",
+      "question": "Which chart is best for showing proportions?",
+      "options": ["Line chart", "Bar chart", "Pie chart", "Scatter plot"],
+      "answer": 2,
+      "time": 60
+    },
+    {
+      "id": "ds-e-9",
+      "question": "Which of these is a supervised learning task?",
+      "options": ["Clustering", "Regression", "Dimensionality reduction", "Association"],
+      "answer": 1,
+      "time": 60
+    },
+    {
+      "id": "ds-e-10",
+      "question": "Which tool is often used for interactive data analysis in Python?",
+      "options": ["VS Code", "Jupyter Notebook", "Excel", "Notepad"],
+      "answer": 1,
+      "time": 60
+    }
+  ],
+  "normal": [
+    {
+      "id": "ds-n-1",
+      "question": "What is the purpose of a confusion matrix?",
+      "options": ["To confuse data scientists", "To evaluate classification models", "To clean datasets", "To visualize regression lines"],
+      "answer": 1,
+      "time": 55
+    },
+    {
+      "id": "ds-n-2",
+      "question": "What does 'overfitting' mean in machine learning?",
+      "options": ["The model fits the training data too well and performs poorly on new data", "The model cannot fit the training data", "The dataset is too large", "The algorithm is too simple"],
+      "answer": 0,
+      "time": 55
+    },
+    {
+      "id": "ds-n-3",
+      "question": "Which Python library is best for machine learning?",
+      "options": ["Seaborn", "Scikit-learn", "BeautifulSoup", "Matplotlib"],
+      "answer": 1,
+      "time": 55
+    },
+    {
+      "id": "ds-n-4",
+      "question": "What is 'feature scaling' used for?",
+      "options": ["To increase dataset size", "To normalize or standardize data for algorithms", "To remove missing values", "To visualize features"],
+      "answer": 1,
+      "time": 55
+    },
+    {
+      "id": "ds-n-5",
+      "question": "Which metric is commonly used for regression models?",
+      "options": ["Accuracy", "Precision", "Mean Squared Error", "F1 Score"],
+      "answer": 2,
+      "time": 55
+    },
+    {
+      "id": "ds-n-6",
+      "question": "Which type of plot is commonly used for correlation between two variables?",
+      "options": ["Bar chart", "Scatter plot", "Pie chart", "Histogram"],
+      "answer": 1,
+      "time": 55
+    },
+    {
+      "id": "ds-n-7",
+      "question": "What is the purpose of 'train-test split'?",
+      "options": ["To divide features and labels", "To separate training and evaluation datasets", "To divide data by classes", "To balance skewed data"],
+      "answer": 1,
+      "time": 55
+    },
+    {
+      "id": "ds-n-8",
+      "question": "Which of these is an unsupervised learning algorithm?",
+      "options": ["Linear regression", "K-means clustering", "Decision tree", "Logistic regression"],
+      "answer": 1,
+      "time": 55
+    },
+    {
+      "id": "ds-n-9",
+      "question": "What does PCA (Principal Component Analysis) do?",
+      "options": ["Increases dataset size", "Reduces dimensionality", "Creates regression models", "Evaluates accuracy"],
+      "answer": 1,
+      "time": 55
+    },
+    {
+      "id": "ds-n-10",
+      "question": "Which tool is widely used for big data processing?",
+      "options": ["TensorFlow", "Apache Hadoop", "Flask", "MongoDB"],
+      "answer": 1,
+      "time": 55
+    }
+  ],
+  "hard": [
+    {
+      "id": "ds-h-1",
+      "question": "What is the difference between bagging and boosting?",
+      "options": ["Bagging reduces variance, boosting reduces bias", "Bagging reduces bias, boosting reduces variance", "They are identical methods", "Both are only for regression"],
+      "answer": 0,
+      "time": 45
+    },
+    {
+      "id": "ds-h-2",
+      "question": "What does 'regularization' help prevent in models?",
+      "options": ["Underfitting", "Overfitting", "Data leakage", "Feature scaling"],
+      "answer": 1,
+      "time": 45
+    },
+    {
+      "id": "ds-h-3",
+      "question": "Which algorithm is commonly used for recommendation systems?",
+      "options": ["K-means", "Collaborative Filtering", "Logistic Regression", "Naive Bayes"],
+      "answer": 1,
+      "time": 45
+    },
+    {
+      "id": "ds-h-4",
+      "question": "What is the curse of dimensionality?",
+      "options": ["Too many rows of data", "High dimensional data making algorithms less effective", "Insufficient training samples", "Overfitting the data"],
+      "answer": 1,
+      "time": 45
+    },
+    {
+      "id": "ds-h-5",
+      "question": "Which method is commonly used to handle imbalanced datasets?",
+      "options": ["SMOTE (Synthetic Minority Oversampling)", "PCA", "Normalization", "Bagging"],
+      "answer": 0,
+      "time": 45
+    },
+    {
+      "id": "ds-h-6",
+      "question": "Which distribution is commonly assumed in statistical tests?",
+      "options": ["Uniform distribution", "Normal distribution", "Poisson distribution", "Exponential distribution"],
+      "answer": 1,
+      "time": 45
+    },
+    {
+      "id": "ds-h-7",
+      "question": "What does 'ROC curve' stand for?",
+      "options": ["Rate of Classification", "Receiver Operating Characteristic", "Regression Optimization Curve", "Relative Output Classification"],
+      "answer": 1,
+      "time": 45
+    },
+    {
+      "id": "ds-h-8",
+      "question": "Which technique is used for dimensionality reduction besides PCA?",
+      "options": ["Random Forest", "t-SNE", "Gradient Descent", "Naive Bayes"],
+      "answer": 1,
+      "time": 45
+    },
+    {
+      "id": "ds-h-9",
+      "question": "What is a type I error in hypothesis testing?",
+      "options": ["Rejecting a true null hypothesis", "Accepting a false null hypothesis", "Both A and B", "Neither"],
+      "answer": 0,
+      "time": 45
+    },
+    {
+      "id": "ds-h-10",
+      "question": "Which deep learning architecture is best suited for image recognition?",
+      "options": ["RNN", "CNN", "GAN", "SVM"],
+      "answer": 1,
+      "time": 45
+    }
+  ]
+}
+,"Cloud Computing with AWS & Azure": {
+    "easy": [
+      {
+        "id": "cc-e-1",
+        "question": "What does IaaS stand for in cloud computing?",
+        "options": [
+          "Internet as a Service",
+          "Infrastructure as a Service",
+          "Integration as a Service",
+          "Interface as a Service"
+        ],
+        "answer": 1,
+        "time": 60
+      },
+      {
+        "id": "cc-e-2",
+        "question": "Which AWS service is primarily used for object storage?",
+        "options": [
+          "Amazon EC2",
+          "Amazon S3",
+          "Amazon RDS",
+          "Amazon VPC"
+        ],
+        "answer": 1,
+        "time": 60
+      },
+      {
+        "id": "cc-e-3",
+        "question": "Which Azure service is equivalent to AWS EC2?",
+        "options": [
+          "Azure Functions",
+          "Azure Blob Storage",
+          "Azure Virtual Machines",
+          "Azure SQL Database"
+        ],
+        "answer": 2,
+        "time": 60
+      },
+      {
+        "id": "cc-e-4",
+        "question": "What is the main benefit of cloud computing?",
+        "options": [
+          "Fixed pricing",
+          "Scalability and flexibility",
+          "Offline access only",
+          "Free for all users"
+        ],
+        "answer": 1,
+        "time": 60
+      },
+      {
+        "id": "cc-e-5",
+        "question": "Which cloud model provides full control over hardware resources?",
+        "options": [
+          "IaaS",
+          "PaaS",
+          "SaaS",
+          "FaaS"
+        ],
+        "answer": 0,
+        "time": 60
+      },
+      {
+        "id": "cc-e-6",
+        "question": "Which AWS service is used for relational databases?",
+        "options": [
+          "Amazon RDS",
+          "Amazon Lambda",
+          "Amazon CloudFront",
+          "Amazon VPC"
+        ],
+        "answer": 0,
+        "time": 60
+      },
+      {
+        "id": "cc-e-7",
+        "question": "What does 'pay-as-you-go' mean in cloud pricing?",
+        "options": [
+          "You pay a fixed monthly fee",
+          "You only pay for the resources you use",
+          "You pay before using services",
+          "You never pay anything"
+        ],
+        "answer": 1,
+        "time": 60
+      },
+      {
+        "id": "cc-e-8",
+        "question": "Which Azure service is used for object storage?",
+        "options": [
+          "Azure SQL Database",
+          "Azure Blob Storage",
+          "Azure Virtual Machines",
+          "Azure Firewall"
+        ],
+        "answer": 1,
+        "time": 60
+      },
+      {
+        "id": "cc-e-9",
+        "question": "What is cloud 'scalability'?",
+        "options": [
+          "The ability to reduce cost",
+          "The ability to increase or decrease resources as needed",
+          "The ability to move data faster",
+          "The ability to run offline"
+        ],
+        "answer": 1,
+        "time": 60
+      },
+      {
+        "id": "cc-e-10",
+        "question": "Which AWS service distributes content globally with low latency?",
+        "options": [
+          "AWS CloudFront",
+          "AWS Lambda",
+          "AWS EC2",
+          "AWS RDS"
+        ],
+        "answer": 0,
+        "time": 60
+      }
+    ],
+    "normal": [
+      {
+        "id": "cc-n-1",
+        "question": "Which Azure service is designed for serverless computing?",
+        "options": [
+          "Azure Functions",
+          "Azure Blob Storage",
+          "Azure VM",
+          "Azure SQL"
+        ],
+        "answer": 0,
+        "time": 55
+      },
+      {
+        "id": "cc-n-2",
+        "question": "Which AWS database service is fully managed and supports SQL?",
+        "options": [
+          "DynamoDB",
+          "RDS",
+          "Redshift",
+          "Aurora"
+        ],
+        "answer": 1,
+        "time": 55
+      },
+      {
+        "id": "cc-n-3",
+        "question": "What is the difference between public and private cloud?",
+        "options": [
+          "Public cloud is for individuals, private cloud is only for government",
+          "Public cloud resources are shared, private cloud is dedicated to one organization",
+          "Public cloud is free, private cloud is paid",
+          "There is no difference"
+        ],
+        "answer": 1,
+        "time": 55
+      },
+      {
+        "id": "cc-n-4",
+        "question": "Which service in AWS allows monitoring and logging of resources?",
+        "options": [
+          "CloudFront",
+          "CloudTrail",
+          "CloudWatch",
+          "CloudFormation"
+        ],
+        "answer": 2,
+        "time": 55
+      },
+      {
+        "id": "cc-n-5",
+        "question": "In Azure, what is the purpose of Resource Groups?",
+        "options": [
+          "They allow grouping of related resources for easier management",
+          "They act as user groups for permissions",
+          "They provide firewall protection",
+          "They are database partitions"
+        ],
+        "answer": 0,
+        "time": 55
+      },
+      {
+        "id": "cc-n-6",
+        "question": "Which AWS service is primarily used for serverless computing?",
+        "options": [
+          "AWS EC2",
+          "AWS Lambda",
+          "AWS S3",
+          "AWS VPC"
+        ],
+        "answer": 1,
+        "time": 55
+      },
+      {
+        "id": "cc-n-7",
+        "question": "Which Azure service provides managed SQL databases?",
+        "options": [
+          "Azure SQL Database",
+          "Azure Functions",
+          "Azure Blob",
+          "Azure VM"
+        ],
+        "answer": 0,
+        "time": 55
+      },
+      {
+        "id": "cc-n-8",
+        "question": "Which AWS service is used for Infrastructure as Code?",
+        "options": [
+          "CloudTrail",
+          "CloudWatch",
+          "CloudFormation",
+          "CloudFront"
+        ],
+        "answer": 2,
+        "time": 55
+      },
+      {
+        "id": "cc-n-9",
+        "question": "Which Azure service allows hosting of containerized applications?",
+        "options": [
+          "Azure Blob",
+          "Azure Container Instances",
+          "Azure Functions",
+          "Azure Firewall"
+        ],
+        "answer": 1,
+        "time": 55
+      },
+      {
+        "id": "cc-n-10",
+        "question": "Which AWS service provides a NoSQL database?",
+        "options": [
+          "Amazon RDS",
+          "Amazon Aurora",
+          "Amazon DynamoDB",
+          "Amazon Redshift"
+        ],
+        "answer": 2,
+        "time": 55
+      }
+    ],
+    "hard": [
+      {
+        "id": "cc-h-1",
+        "question": "What is the key difference between AWS CloudFormation and Terraform?",
+        "options": [
+          "CloudFormation is AWS-specific, Terraform is multi-cloud",
+          "Both are multi-cloud tools",
+          "Terraform is AWS-only, CloudFormation is multi-cloud",
+          "There is no difference"
+        ],
+        "answer": 0,
+        "time": 45
+      },
+      {
+        "id": "cc-h-2",
+        "question": "What is Azure Active Directory primarily used for?",
+        "options": [
+          "Managing storage",
+          "Identity and access management",
+          "Hosting virtual machines",
+          "Networking"
+        ],
+        "answer": 1,
+        "time": 45
+      },
+      {
+        "id": "cc-h-3",
+        "question": "Which AWS service is used for big data analytics?",
+        "options": [
+          "Amazon Athena",
+          "Amazon EC2",
+          "Amazon CloudFront",
+          "Amazon DynamoDB"
+        ],
+        "answer": 0,
+        "time": 45
+      },
+      {
+        "id": "cc-h-4",
+        "question": "Which Azure service is designed for distributed big data processing?",
+        "options": [
+          "Azure Functions",
+          "Azure Synapse Analytics",
+          "Azure HDInsight",
+          "Azure Cosmos DB"
+        ],
+        "answer": 2,
+        "time": 45
+      },
+      {
+        "id": "cc-h-5",
+        "question": "What is AWS VPC peering used for?",
+        "options": [
+          "Connecting two VPCs privately",
+          "Creating multiple EC2 instances",
+          "Storing objects",
+          "Monitoring logs"
+        ],
+        "answer": 0,
+        "time": 45
+      },
+      {
+        "id": "cc-h-6",
+        "question": "What does 'multi-tenancy' mean in cloud computing?",
+        "options": [
+          "Multiple users share the same physical resources securely",
+          "Multiple clouds are connected together",
+          "Multiple servers in one rack",
+          "Multiple admins in one account"
+        ],
+        "answer": 0,
+        "time": 45
+      },
+      {
+        "id": "cc-h-7",
+        "question": "Which AWS service provides data warehousing?",
+        "options": [
+          "Amazon DynamoDB",
+          "Amazon Aurora",
+          "Amazon Redshift",
+          "Amazon Athena"
+        ],
+        "answer": 2,
+        "time": 45
+      },
+      {
+        "id": "cc-h-8",
+        "question": "What is Azure Cosmos DB best known for?",
+        "options": [
+          "Global distribution and multi-model database support",
+          "Relational SQL database support",
+          "File storage only",
+          "Virtual machine hosting"
+        ],
+        "answer": 0,
+        "time": 45
+      },
+      {
+        "id": "cc-h-9",
+        "question": "Which AWS service provides API management?",
+        "options": [
+          "Amazon API Gateway",
+          "Amazon S3",
+          "Amazon RDS",
+          "Amazon Lambda"
+        ],
+        "answer": 0,
+        "time": 45
+      },
+      {
+        "id": "cc-h-10",
+        "question": "Which Azure service is used for monitoring applications and telemetry data?",
+        "options": [
+          "Azure Blob Storage",
+          "Azure Monitor",
+          "Azure Firewall",
+          "Azure Functions"
+        ],
+        "answer": 1,
+        "time": 45
+      }
+    ]
+  }
+
+
+,"Software Engineering": {
+  "easy": [
+    {
+      "id": "se-e-1",
+      "question": "What does SDLC stand for?",
+      "options": ["System Development Lifecycle", "Software Development Lifecycle", "Structured Data Logic Cycle", "System Design Logic Chain"],
+      "answer": 1,
+      "time": 60
+    },
+    {
+      "id": "se-e-2",
+      "question": "Which model of SDLC is the simplest and linear?",
+      "options": ["Spiral Model", "V-Model", "Waterfall Model", "Agile Model"],
+      "answer": 2,
+      "time": 60
+    },
+    {
+      "id": "se-e-3",
+      "question": "In Agile, work is typically divided into short cycles called?",
+      "options": ["Phases", "Iterations", "Sprints", "Modules"],
+      "answer": 2,
+      "time": 60
+    },
+    {
+      "id": "se-e-4",
+      "question": "Which of the following is NOT a type of software testing?",
+      "options": ["Unit Testing", "Integration Testing", "Acceptance Testing", "Encryption Testing"],
+      "answer": 3,
+      "time": 60
+    },
+    {
+      "id": "se-e-5",
+      "question": "Who is primarily responsible for ensuring quality in software?",
+      "options": ["Project Manager", "Software Tester", "Scrum Master", "End User"],
+      "answer": 1,
+      "time": 60
+    },
+    {
+      "id": "se-e-6",
+      "question": "Which document defines project requirements in detail?",
+      "options": ["Vision Document", "Requirement Specification", "Design Document", "Test Plan"],
+      "answer": 1,
+      "time": 60
+    },
+    {
+      "id": "se-e-7",
+      "question": "What does UML stand for?",
+      "options": ["Unified Modeling Language", "Universal Management Logic", "User Management Layer", "Unified Modular Layout"],
+      "answer": 0,
+      "time": 60
+    },
+    {
+      "id": "se-e-8",
+      "question": "Which Agile role facilitates the daily stand-ups?",
+      "options": ["Product Owner", "Scrum Master", "Project Sponsor", "Team Lead"],
+      "answer": 1,
+      "time": 60
+    },
+    {
+      "id": "se-e-9",
+      "question": "What is the primary purpose of version control systems like Git?",
+      "options": ["Automate Testing", "Manage Code Changes", "Generate Documentation", "Track User Stories"],
+      "answer": 1,
+      "time": 60
+    },
+    {
+      "id": "se-e-10",
+      "question": "Which of these is an Agile framework?",
+      "options": ["Scrum", "Waterfall", "Spiral", "V-Model"],
+      "answer": 0,
+      "time": 60
+    }
+  ],
+  "normal": [
+    {
+      "id": "se-n-1",
+      "question": "What is the main disadvantage of the Waterfall model?",
+      "options": ["Too flexible", "High cost", "Difficult to go back to previous phases", "Requires too much documentation"],
+      "answer": 2,
+      "time": 55
+    },
+    {
+      "id": "se-n-2",
+      "question": "Which Agile artifact shows work to be completed in a sprint?",
+      "options": ["Product Backlog", "Sprint Backlog", "Burndown Chart", "User Stories"],
+      "answer": 1,
+      "time": 55
+    },
+    {
+      "id": "se-n-3",
+      "question": "In object-oriented design, which principle promotes reusability?",
+      "options": ["Inheritance", "Encapsulation", "Polymorphism", "Abstraction"],
+      "answer": 0,
+      "time": 55
+    },
+    {
+      "id": "se-n-4",
+      "question": "What is a design pattern?",
+      "options": ["An algorithm", "A reusable solution to common design problems", "A coding standard", "A project plan"],
+      "answer": 1,
+      "time": 55
+    },
+    {
+      "id": "se-n-5",
+      "question": "Which type of testing ensures that new code doesn’t break existing features?",
+      "options": ["Smoke Testing", "Unit Testing", "Regression Testing", "System Testing"],
+      "answer": 2,
+      "time": 55
+    },
+    {
+      "id": "se-n-6",
+      "question": "Which Agile ceremony involves reflecting on what went well and what can improve?",
+      "options": ["Daily Scrum", "Sprint Review", "Sprint Retrospective", "Backlog Grooming"],
+      "answer": 2,
+      "time": 55
+    },
+    {
+      "id": "se-n-7",
+      "question": "What is technical debt?",
+      "options": ["The cost of fixing bugs", "Shortcuts in code that must be repaid later", "Unpaid project invoices", "Backlog items not completed"],
+      "answer": 1,
+      "time": 55
+    },
+    {
+      "id": "se-n-8",
+      "question": "Which of the following is a black-box testing technique?",
+      "options": ["Boundary Value Analysis", "Code Coverage", "Path Testing", "Cyclomatic Complexity"],
+      "answer": 0,
+      "time": 55
+    },
+    {
+      "id": "se-n-9",
+      "question": "Which Agile role prioritizes the product backlog?",
+      "options": ["Scrum Master", "Project Manager", "Product Owner", "Developer"],
+      "answer": 2,
+      "time": 55
+    },
+    {
+      "id": "se-n-10",
+      "question": "What does CI/CD stand for?",
+      "options": ["Code Integration / Code Deployment", "Continuous Integration / Continuous Deployment", "Critical Infrastructure / Code Delivery", "Centralized Implementation / Centralized Development"],
+      "answer": 1,
+      "time": 55
+    }
+  ],
+  "hard": [
+    {
+      "id": "se-h-1",
+      "question": "What is the main difference between functional and non-functional requirements?",
+      "options": ["Functional defines system behavior, non-functional defines system qualities", "Functional defines UI design, non-functional defines backend logic", "Functional is optional, non-functional is mandatory", "Functional is for testing, non-functional is for design"],
+      "answer": 0,
+      "time": 45
+    },
+    {
+      "id": "se-h-2",
+      "question": "Explain the concept of Dependency Injection in software design.",
+      "options": ["Providing objects their dependencies externally", "A testing technique", "An Agile principle", "Encrypting external libraries"],
+      "answer": 0,
+      "time": 45
+    },
+    {
+      "id": "se-h-3",
+      "question": "Which testing method uses white-box techniques?",
+      "options": ["Unit Testing", "Regression Testing", "Acceptance Testing", "System Testing"],
+      "answer": 0,
+      "time": 45
+    },
+    {
+      "id": "se-h-4",
+      "question": "What is the difference between verification and validation?",
+      "options": ["Verification ensures the product is built right, validation ensures the right product is built", "Verification is functional testing, validation is non-functional testing", "Verification is black-box testing, validation is white-box testing", "There is no difference"],
+      "answer": 0,
+      "time": 45
+    },
+    {
+      "id": "se-h-5",
+      "question": "Which design pattern ensures only one instance of a class exists?",
+      "options": ["Factory Pattern", "Observer Pattern", "Singleton Pattern", "Decorator Pattern"],
+      "answer": 2,
+      "time": 45
+    },
+    {
+      "id": "se-h-6",
+      "question": "In Agile metrics, what does a Burndown Chart represent?",
+      "options": ["Team velocity", "Remaining work over time", "Completed features", "Budget spent"],
+      "answer": 1,
+      "time": 45
+    },
+    {
+      "id": "se-h-7",
+      "question": "What is the key purpose of using microservices in modern software architecture?",
+      "options": ["Increase UI performance", "Break down monoliths into independent services", "Reduce testing complexity", "Avoid version control conflicts"],
+      "answer": 1,
+      "time": 45
+    },
+    {
+      "id": "se-h-8",
+      "question": "What is pair programming?",
+      "options": ["Two developers writing separate modules", "Two developers writing the same code together", "Two testers reviewing code", "Two managers reviewing code quality"],
+      "answer": 1,
+      "time": 45
+    },
+    {
+      "id": "se-h-9",
+      "question": "Explain the Observer Design Pattern.",
+      "options": ["An object notifies dependent objects of state changes", "A manager oversees project activities", "A testing pattern for user behavior", "A security mechanism"],
+      "answer": 0,
+      "time": 45
+    },
+    {
+      "id": "se-h-10",
+      "question": "What is the purpose of a Spike in Agile development?",
+      "options": ["Estimate testing time", "Research or prototype to reduce uncertainty", "Fix production issues quickly", "Split backlog items"],
+      "answer": 1,
+      "time": 45
+    }
+  ]
+}
+,"Cybersecurity Fundamentals": {
+  "easy": [
+    {
+      "id": "cy-e-1",
+      "question": "What does the CIA triad in cybersecurity stand for?",
+      "options": ["Confidentiality, Integrity, Availability", "Control, Information, Access", "Confidentiality, Identity, Authentication", "Cryptography, Integrity, Audit"],
+      "answer": 0,
+      "time": 60
+    },
+    {
+      "id": "cy-e-2",
+      "question": "Which of the following is an example of strong password practice?",
+      "options": ["Using 'password123'", "Using personal information", "Using a mix of letters, numbers, and symbols", "Using the same password everywhere"],
+      "answer": 2,
+      "time": 60
+    },
+    {
+      "id": "cy-e-3",
+      "question": "What type of malware demands payment to restore access to files?",
+      "options": ["Trojan", "Ransomware", "Spyware", "Worm"],
+      "answer": 1,
+      "time": 60
+    },
+    {
+      "id": "cy-e-4",
+      "question": "Which device filters incoming and outgoing network traffic?",
+      "options": ["Switch", "Router", "Firewall", "Hub"],
+      "answer": 2,
+      "time": 60
+    },
+    {
+      "id": "cy-e-5",
+      "question": "Phishing attacks are mainly carried out through?",
+      "options": ["Emails and fake websites", "Routers", "Firewalls", "Antivirus software"],
+      "answer": 0,
+      "time": 60
+    },
+    {
+      "id": "cy-e-6",
+      "question": "Which of these is a common method of authentication?",
+      "options": ["Username only", "Password only", "Multi-factor authentication", "Unencrypted access"],
+      "answer": 2,
+      "time": 60
+    },
+    {
+      "id": "cy-e-7",
+      "question": "What is the purpose of antivirus software?",
+      "options": ["Block network traffic", "Detect and remove malicious software", "Encrypt files", "Monitor employee activity"],
+      "answer": 1,
+      "time": 60
+    },
+    {
+      "id": "cy-e-8",
+      "question": "Which of these is a physical security measure?",
+      "options": ["Firewall", "CCTV cameras", "Encryption", "Antivirus"],
+      "answer": 1,
+      "time": 60
+    },
+    {
+      "id": "cy-e-9",
+      "question": "What is social engineering in cybersecurity?",
+      "options": ["Hacking passwords directly", "Manipulating people to gain access", "Encrypting user data", "Developing secure apps"],
+      "answer": 1,
+      "time": 60
+    },
+    {
+      "id": "cy-e-10",
+      "question": "Which of these is an example of a DoS attack?",
+      "options": ["Flooding a server with traffic", "Stealing a password", "Installing spyware", "Encrypting files for ransom"],
+      "answer": 0,
+      "time": 60
+    }
+  ],
+  "normal": [
+    {
+      "id": "cy-n-1",
+      "question": "What does encryption primarily protect?",
+      "options": ["Data availability", "Data confidentiality", "Data integrity", "Data access speed"],
+      "answer": 1,
+      "time": 55
+    },
+    {
+      "id": "cy-n-2",
+      "question": "Which protocol is considered secure for web communication?",
+      "options": ["HTTP", "FTP", "HTTPS", "Telnet"],
+      "answer": 2,
+      "time": 55
+    },
+    {
+      "id": "cy-n-3",
+      "question": "A zero-day vulnerability refers to?",
+      "options": ["A virus detected immediately", "A vulnerability exploited before a fix is available", "A fake security update", "A password reset attack"],
+      "answer": 1,
+      "time": 55
+    },
+    {
+      "id": "cy-n-4",
+      "question": "What is the purpose of penetration testing?",
+      "options": ["To train employees", "To exploit weaknesses legally and improve security", "To steal company data", "To monitor user activity"],
+      "answer": 1,
+      "time": 55
+    },
+    {
+      "id": "cy-n-5",
+      "question": "Which of these is a symmetric encryption algorithm?",
+      "options": ["RSA", "AES", "ECC", "DSA"],
+      "answer": 1,
+      "time": 55
+    },
+    {
+      "id": "cy-n-6",
+      "question": "What is a brute force attack?",
+      "options": ["Guessing passwords systematically", "Using viruses to crash a system", "Encrypting files", "Phishing emails"],
+      "answer": 0,
+      "time": 55
+    },
+    {
+      "id": "cy-n-7",
+      "question": "What is the main role of a digital certificate?",
+      "options": ["Encrypt files", "Verify the identity of entities online", "Detect viruses", "Prevent spam"],
+      "answer": 1,
+      "time": 55
+    },
+    {
+      "id": "cy-n-8",
+      "question": "Which of these is an example of two-factor authentication?",
+      "options": ["Password + PIN", "Password + Security Token", "Password only", "Fingerprint only"],
+      "answer": 1,
+      "time": 55
+    },
+    {
+      "id": "cy-n-9",
+      "question": "Which type of attack injects malicious code into input fields?",
+      "options": ["DDoS", "SQL Injection", "Phishing", "MITM"],
+      "answer": 1,
+      "time": 55
+    },
+    {
+      "id": "cy-n-10",
+      "question": "What does a VPN mainly provide?",
+      "options": ["Faster internet", "Anonymity and secure communication", "Ad-blocking", "Antivirus protection"],
+      "answer": 1,
+      "time": 55
+    }
+  ],
+  "hard": [
+    {
+      "id": "cy-h-1",
+      "question": "Which cybersecurity framework is widely used for risk management?",
+      "options": ["ISO 27001", "GDPR", "HIPAA", "PCI-DSS"],
+      "answer": 0,
+      "time": 45
+    },
+    {
+      "id": "cy-h-2",
+      "question": "Explain the principle of least privilege.",
+      "options": ["Users should have only the minimum access necessary", "Admins should have access to everything", "Data must be encrypted at all times", "Users should not have passwords"],
+      "answer": 0,
+      "time": 45
+    },
+    {
+      "id": "cy-h-3",
+      "question": "What is a man-in-the-middle (MITM) attack?",
+      "options": ["Intercepting communication between two parties", "Flooding a network with requests", "Injecting SQL commands", "Encrypting data files"],
+      "answer": 0,
+      "time": 45
+    },
+    {
+      "id": "cy-h-4",
+      "question": "Which cryptographic concept uses a public and private key pair?",
+      "options": ["Symmetric encryption", "Asymmetric encryption", "Hashing", "Steganography"],
+      "answer": 1,
+      "time": 45
+    },
+    {
+      "id": "cy-h-5",
+      "question": "Which type of malware records keystrokes?",
+      "options": ["Spyware", "Keylogger", "Ransomware", "Trojan"],
+      "answer": 1,
+      "time": 45
+    },
+    {
+      "id": "cy-h-6",
+      "question": "What is the difference between hashing and encryption?",
+      "options": ["Hashing is reversible, encryption is not", "Encryption is reversible, hashing is not", "Both are reversible", "Neither is used in security"],
+      "answer": 1,
+      "time": 45
+    },
+    {
+      "id": "cy-h-7",
+      "question": "What does IDS stand for in cybersecurity?",
+      "options": ["Information Detection System", "Intrusion Detection System", "Internet Defense System", "Internal Data Security"],
+      "answer": 1,
+      "time": 45
+    },
+    {
+      "id": "cy-h-8",
+      "question": "Which law regulates data protection in the EU?",
+      "options": ["HIPAA", "GDPR", "SOX", "ISO 27001"],
+      "answer": 1,
+      "time": 45
+    },
+    {
+      "id": "cy-h-9",
+      "question": "What is a security sandbox?",
+      "options": ["A safe test environment for running untrusted code", "A firewall rule", "A secure data vault", "An encrypted container"],
+      "answer": 0,
+      "time": 45
+    },
+    {
+      "id": "cy-h-10",
+      "question": "Which attack uses compromised IoT devices for large-scale traffic flooding?",
+      "options": ["Phishing", "Botnet-based DDoS", "SQL Injection", "Keylogging"],
+      "answer": 1,
+      "time": 45
+    }
+  ]
+}
+,
+    "Digital Marketing & SEO Mastery": {
+      "easy": [
+        {
+          "id": "dm-e-1",
+          "question": "What does SEO stand for?",
+          "options": [
+            "Search Engine Optimization",
+            "Social Engagement Outreach",
+            "Search Engine Operation",
+            "Social Email Optimization"
+          ],
+          "answer": 0,
+          "time": 60
+        },
+        {
+          "id": "dm-e-2",
+          "question": "Which of the following is a paid form of online advertising?",
+          "options": [
+            "Organic search results",
+            "PPC (Pay-Per-Click)",
+            "SEO",
+            "Blogging"
+          ],
+          "answer": 1,
+          "time": 60
+        },
+        {
+          "id": "dm-e-3",
+          "question": "Which platform is best known for professional networking?",
+          "options": [
+            "Facebook",
+            "Twitter",
+            "LinkedIn",
+            "Instagram"
+          ],
+          "answer": 2,
+          "time": 60
+        },
+        {
+          "id": "dm-e-4",
+          "question": "What does CTR stand for?",
+          "options": [
+            "Click Through Rate",
+            "Customer Target Reach",
+            "Conversion Tracking Ratio",
+            "Content Traffic Ranking"
+          ],
+          "answer": 0,
+          "time": 60
+        },
+        {
+          "id": "dm-e-5",
+          "question": "Which metric shows how many visitors leave a site after viewing only one page?",
+          "options": [
+            "Bounce Rate",
+            "Conversion Rate",
+            "Click Through Rate",
+            "Session Duration"
+          ],
+          "answer": 0,
+          "time": 60
+        },
+        {
+          "id": "dm-e-6",
+          "question": "Which of these is an example of content marketing?",
+          "options": [
+            "Google Ads",
+            "Banner Ads",
+            "Blog Articles",
+            "Billboards"
+          ],
+          "answer": 2,
+          "time": 60
+        },
+        {
+          "id": "dm-e-7",
+          "question": "Which search engine is most widely used worldwide?",
+          "options": [
+            "Yahoo",
+            "Google",
+            "Bing",
+            "DuckDuckGo"
+          ],
+          "answer": 1,
+          "time": 60
+        },
+        {
+          "id": "dm-e-8",
+          "question": "What does PPC stand for?",
+          "options": [
+            "Pay Per Click",
+            "Page Performance Check",
+            "Post Promotion Campaign",
+            "Public Profile Content"
+          ],
+          "answer": 0,
+          "time": 60
+        },
+        {
+          "id": "dm-e-9",
+          "question": "Which social media platform is primarily image-focused?",
+          "options": [
+            "Instagram",
+            "LinkedIn",
+            "Twitter",
+            "Reddit"
+          ],
+          "answer": 0,
+          "time": 60
+        },
+        {
+          "id": "dm-e-10",
+          "question": "Which of the following is NOT a search engine?",
+          "options": [
+            "Google",
+            "Bing",
+            "YouTube",
+            "Yahoo"
+          ],
+          "answer": 2,
+          "time": 60
+        }
+      ],
+      "normal": [
+        {
+          "id": "dm-n-1",
+          "question": "What is the main purpose of using keywords in SEO?",
+          "options": [
+            "To make websites look attractive",
+            "To improve ranking in search engines",
+            "To reduce website loading speed",
+            "To increase bounce rate"
+          ],
+          "answer": 1,
+          "time": 55
+        },
+        {
+          "id": "dm-n-2",
+          "question": "What does the term 'backlink' mean?",
+          "options": [
+            "A link from your website to another",
+            "A link from another website to yours",
+            "A broken link on your website",
+            "An internal link within your website"
+          ],
+          "answer": 1,
+          "time": 55
+        },
+        {
+          "id": "dm-n-3",
+          "question": "What is the purpose of a meta description?",
+          "options": [
+            "To describe the images on a page",
+            "To summarize the page content for search engines",
+            "To increase the page load speed",
+            "To add extra backlinks"
+          ],
+          "answer": 1,
+          "time": 55
+        },
+        {
+          "id": "dm-n-4",
+          "question": "Which of these is an example of on-page SEO?",
+          "options": [
+            "Backlinks",
+            "Social media shares",
+            "Optimizing title tags",
+            "Guest blogging"
+          ],
+          "answer": 2,
+          "time": 55
+        },
+        {
+          "id": "dm-n-5",
+          "question": "Which tool is commonly used for tracking website traffic?",
+          "options": [
+            "Google Analytics",
+            "Google Ads",
+            "Photoshop",
+            "Grammarly"
+          ],
+          "answer": 0,
+          "time": 55
+        },
+        {
+          "id": "dm-n-6",
+          "question": "Which of these best describes a 'conversion' in digital marketing?",
+          "options": [
+            "A user clicking on an ad",
+            "A visitor leaving the site",
+            "A desired action like a sale or signup",
+            "A user opening an email"
+          ],
+          "answer": 2,
+          "time": 55
+        },
+        {
+          "id": "dm-n-7",
+          "question": "What does DA stand for in SEO?",
+          "options": [
+            "Domain Authority",
+            "Data Analysis",
+            "Digital Ads",
+            "Direct Access"
+          ],
+          "answer": 0,
+          "time": 55
+        },
+        {
+          "id": "dm-n-8",
+          "question": "What is 'remarketing'?",
+          "options": [
+            "Marketing to new customers only",
+            "Showing ads to people who already visited your site",
+            "Reposting social media content",
+            "Emailing random customers"
+          ],
+          "answer": 1,
+          "time": 55
+        },
+        {
+          "id": "dm-n-9",
+          "question": "Which file helps search engines understand which pages to crawl?",
+          "options": [
+            "robots.txt",
+            "sitemap.xml",
+            "index.html",
+            "meta.html"
+          ],
+          "answer": 0,
+          "time": 55
+        },
+        {
+          "id": "dm-n-10",
+          "question": "What is the main advantage of email marketing?",
+          "options": [
+            "It guarantees viral growth",
+            "It provides direct communication with customers",
+            "It always improves SEO",
+            "It eliminates bounce rates"
+          ],
+          "answer": 1,
+          "time": 55
+        }
+      ],
+      "hard": [
+        {
+          "id": "dm-h-1",
+          "question": "What does the canonical tag in SEO do?",
+          "options": [
+            "Helps avoid duplicate content issues",
+            "Improves website speed",
+            "Tracks user behavior",
+            "Creates backlinks automatically"
+          ],
+          "answer": 0,
+          "time": 45
+        },
+        {
+          "id": "dm-h-2",
+          "question": "What is 'latent semantic indexing' (LSI) in SEO?",
+          "options": [
+            "A way to hide keywords in HTML",
+            "Using semantically related keywords for context",
+            "Indexing broken links on a website",
+            "Analyzing website traffic sources"
+          ],
+          "answer": 1,
+          "time": 45
+        },
+        {
+          "id": "dm-h-3",
+          "question": "Which metric in Google Analytics tracks user engagement depth?",
+          "options": [
+            "Bounce Rate",
+            "Average Session Duration",
+            "CTR",
+            "CPC"
+          ],
+          "answer": 1,
+          "time": 45
+        },
+        {
+          "id": "dm-h-4",
+          "question": "What is the purpose of A/B testing in digital marketing?",
+          "options": [
+            "To test two versions of content for performance",
+            "To improve server speed",
+            "To block competitor ads",
+            "To remove duplicate backlinks"
+          ],
+          "answer": 0,
+          "time": 45
+        },
+        {
+          "id": "dm-h-5",
+          "question": "In SEO, what does 'nofollow' attribute in a link mean?",
+          "options": [
+            "Search engines should not crawl the link",
+            "Search engines should not pass link equity",
+            "The link is broken",
+            "The link is permanent"
+          ],
+          "answer": 1,
+          "time": 45
+        },
+        {
+          "id": "dm-h-6",
+          "question": "What is the difference between black-hat and white-hat SEO?",
+          "options": [
+            "Black-hat follows guidelines, white-hat breaks them",
+            "White-hat uses unethical methods, black-hat is ethical",
+            "Black-hat uses manipulative tactics, white-hat follows guidelines",
+            "Both are the same"
+          ],
+          "answer": 2,
+          "time": 45
+        },
+        {
+          "id": "dm-h-7",
+          "question": "What is programmatic advertising?",
+          "options": [
+            "Manual buying of ad space",
+            "Automated buying of digital ads using AI",
+            "Posting ads on social media only",
+            "Advertising offline in newspapers"
+          ],
+          "answer": 1,
+          "time": 45
+        },
+        {
+          "id": "dm-h-8",
+          "question": "What is the primary purpose of Google’s E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness) guidelines?",
+          "options": [
+            "To improve ad revenue",
+            "To evaluate content quality in search results",
+            "To reduce page load speed",
+            "To track backlinks"
+          ],
+          "answer": 1,
+          "time": 45
+        },
+        {
+          "id": "dm-h-9",
+          "question": "Which KPI best measures ROI in a paid ad campaign?",
+          "options": [
+            "Click Through Rate (CTR)",
+            "Cost Per Click (CPC)",
+            "Conversion Rate",
+            "Impressions"
+          ],
+          "answer": 2,
+          "time": 45
+        },
+        {
+          "id": "dm-h-10",
+          "question": "Which factor has the greatest impact on organic search rankings?",
+          "options": [
+            "Keyword stuffing",
+            "High-quality relevant content",
+            "Excessive ads",
+            "Hidden text"
+          ],
+          "answer": 1,
+          "time": 45
+        }
+      ]
+    }
+,
+    "Graphic Design & UI/UX Essentials": {
+      "easy": [
+        {
+          "id": "gd-e-1",
+          "question": "What does UI stand for in design?",
+          "options": ["User Information", "User Interface", "Universal Input", "Unique Interaction"],
+          "answer": 1,
+          "time": 60
+        },
+        {
+          "id": "gd-e-2",
+          "question": "Which color model is primarily used for digital screens?",
+          "options": ["CMYK", "RGB", "Pantone", "HEX"],
+          "answer": 1,
+          "time": 60
+        },
+        {
+          "id": "gd-e-3",
+          "question": "Which design principle ensures elements are visually balanced?",
+          "options": ["Contrast", "Alignment", "Balance", "Hierarchy"],
+          "answer": 2,
+          "time": 60
+        },
+        {
+          "id": "gd-e-4",
+          "question": "What does UX stand for?",
+          "options": ["User Execution", "User Experience", "Universal Exchange", "Unique Experiment"],
+          "answer": 1,
+          "time": 60
+        },
+        {
+          "id": "gd-e-5",
+          "question": "Which software is most commonly used for vector graphics?",
+          "options": ["Adobe Photoshop", "Adobe Illustrator", "Figma", "Canva"],
+          "answer": 1,
+          "time": 60
+        },
+        {
+          "id": "gd-e-6",
+          "question": "Which of these is an example of a sans-serif font?",
+          "options": ["Times New Roman", "Arial", "Garamond", "Georgia"],
+          "answer": 1,
+          "time": 60
+        },
+        {
+          "id": "gd-e-7",
+          "question": "Which file format is best for web logos?",
+          "options": ["JPG", "PNG", "GIF", "SVG"],
+          "answer": 3,
+          "time": 60
+        },
+        {
+          "id": "gd-e-8",
+          "question": "What is the purpose of wireframes in UI/UX design?",
+          "options": ["To finalize typography", "To test color palettes", "To outline layout and structure", "To create animations"],
+          "answer": 2,
+          "time": 60
+        },
+        {
+          "id": "gd-e-9",
+          "question": "Which of the following represents good contrast?",
+          "options": ["Light text on dark background", "Dark text on dark background", "Light text on light background", "All of the above"],
+          "answer": 0,
+          "time": 60
+        },
+        {
+          "id": "gd-e-10",
+          "question": "Which design principle helps guide the user's eye to the most important element?",
+          "options": ["Repetition", "Proximity", "Hierarchy", "Alignment"],
+          "answer": 2,
+          "time": 60
+        }
+      ],
+      "normal": [
+        {
+          "id": "gd-n-1",
+          "question": "What is the difference between raster and vector graphics?",
+          "options": [
+            "Raster is pixel-based, vector is scalable with math",
+            "Vector is pixel-based, raster is scalable with math",
+            "Both are pixel-based",
+            "Both are scalable without quality loss"
+          ],
+          "answer": 0,
+          "time": 55
+        },
+        {
+          "id": "gd-n-2",
+          "question": "Which tool is best for creating interactive prototypes?",
+          "options": ["Photoshop", "Figma", "Illustrator", "Lightroom"],
+          "answer": 1,
+          "time": 55
+        },
+        {
+          "id": "gd-n-3",
+          "question": "Which color scheme uses colors opposite each other on the color wheel?",
+          "options": ["Analogous", "Complementary", "Monochromatic", "Triadic"],
+          "answer": 1,
+          "time": 55
+        },
+        {
+          "id": "gd-n-4",
+          "question": "What is the purpose of a style guide?",
+          "options": [
+            "To improve SEO",
+            "To provide consistency in design and branding",
+            "To generate ads",
+            "To compress images"
+          ],
+          "answer": 1,
+          "time": 55
+        },
+        {
+          "id": "gd-n-5",
+          "question": "Which UX principle is based on reducing mental effort for users?",
+          "options": ["Affordance", "Simplicity", "Consistency", "Accessibility"],
+          "answer": 1,
+          "time": 55
+        },
+        {
+          "id": "gd-n-6",
+          "question": "Which file format is ideal for print design?",
+          "options": ["PNG", "JPEG", "TIFF", "GIF"],
+          "answer": 2,
+          "time": 55
+        },
+        {
+          "id": "gd-n-7",
+          "question": "Which grid system is most commonly used in responsive web design?",
+          "options": ["8-point grid", "2-column grid", "10-point grid", "3-column grid"],
+          "answer": 0,
+          "time": 55
+        },
+        {
+          "id": "gd-n-8",
+          "question": "What is the golden ratio often used for in design?",
+          "options": ["Typography size", "Color balance", "Proportional layouts", "Animation speed"],
+          "answer": 2,
+          "time": 55
+        },
+        {
+          "id": "gd-n-9",
+          "question": "What is usability testing mainly used for?",
+          "options": [
+            "Checking website SEO",
+            "Understanding how real users interact with a product",
+            "Testing loading speed",
+            "Fixing backend errors"
+          ],
+          "answer": 1,
+          "time": 55
+        },
+        {
+          "id": "gd-n-10",
+          "question": "Which UX law states that users prefer familiar designs?",
+          "options": ["Fitts’s Law", "Jakob’s Law", "Miller’s Law", "Hick’s Law"],
+          "answer": 1,
+          "time": 55
+        }
+      ],
+      "hard": [
+        {
+          "id": "gd-h-1",
+          "question": "What is the main benefit of using a design system?",
+          "options": [
+            "Faster coding performance",
+            "Visual and functional consistency across products",
+            "SEO optimization",
+            "Reducing image file sizes"
+          ],
+          "answer": 1,
+          "time": 45
+        },
+        {
+          "id": "gd-h-2",
+          "question": "What does 'affordance' mean in UX design?",
+          "options": [
+            "How affordable a product is",
+            "Visual cues that suggest how something can be used",
+            "User’s willingness to pay",
+            "The cost of user testing"
+          ],
+          "answer": 1,
+          "time": 45
+        },
+        {
+          "id": "gd-h-3",
+          "question": "Which UX law relates to the time it takes to make decisions increasing with options?",
+          "options": ["Miller’s Law", "Fitts’s Law", "Hick’s Law", "Parkinson’s Law"],
+          "answer": 2,
+          "time": 45
+        },
+        {
+          "id": "gd-h-4",
+          "question": "What is a heatmap used for in UX research?",
+          "options": [
+            "Showing conversion rates",
+            "Visualizing user interactions like clicks and scrolls",
+            "Measuring site speed",
+            "Testing ad performance"
+          ],
+          "answer": 1,
+          "time": 45
+        },
+        {
+          "id": "gd-h-5",
+          "question": "Which color model is subtractive and used in printing?",
+          "options": ["RGB", "CMYK", "HSB", "HEX"],
+          "answer": 1,
+          "time": 45
+        },
+        {
+          "id": "gd-h-6",
+          "question": "Which principle explains that users spend most of their time on other sites and expect yours to work the same way?",
+          "options": ["Fitts’s Law", "Miller’s Law", "Jakob’s Law", "Pareto Principle"],
+          "answer": 2,
+          "time": 45
+        },
+        {
+          "id": "gd-h-7",
+          "question": "What is microcopy in UX design?",
+          "options": [
+            "Small font sizes",
+            "Short text used for instructions, errors, or CTAs",
+            "Copying text in small chunks",
+            "Tiny icons in design"
+          ],
+          "answer": 1,
+          "time": 45
+        },
+        {
+          "id": "gd-h-8",
+          "question": "What is skeuomorphic design?",
+          "options": [
+            "Minimalistic design",
+            "Design that mimics real-world objects",
+            "Flat design",
+            "Responsive design"
+          ],
+          "answer": 1,
+          "time": 45
+        },
+        {
+          "id": "gd-h-9",
+          "question": "Which file format supports both vector and raster elements?",
+          "options": ["SVG", "PDF", "PNG", "JPG"],
+          "answer": 1,
+          "time": 45
+        },
+        {
+          "id": "gd-h-10",
+          "question": "What is the main goal of accessibility in design?",
+          "options": [
+            "Making designs trendy",
+            "Improving SEO",
+            "Ensuring usability for people with disabilities",
+            "Reducing file size"
+          ],
+          "answer": 2,
+          "time": 45
+        }
+      ]
+    }
+  ,
+    "Financial Literacy & Investing Basics": {
+      "easy": [
+        {
+          "id": "fin-e-1",
+          "question": "What does ROI stand for?",
+          "options": ["Rate of Income", "Return on Investment", "Revenue on Interest", "Risk of Investment"],
+          "answer": 1,
+          "time": 60
+        },
+        {
+          "id": "fin-e-2",
+          "question": "Which of the following is considered a liability?",
+          "options": ["Savings account", "Credit card debt", "Stocks", "Mutual funds"],
+          "answer": 1,
+          "time": 60
+        },
+        {
+          "id": "fin-e-3",
+          "question": "Which of the following is a fixed expense?",
+          "options": ["Rent", "Groceries", "Utility bills", "Entertainment"],
+          "answer": 0,
+          "time": 60
+        },
+        {
+          "id": "fin-e-4",
+          "question": "What does budgeting help you do?",
+          "options": [
+            "Increase your salary",
+            "Track income and expenses",
+            "Avoid paying taxes",
+            "Make investments risk-free"
+          ],
+          "answer": 1,
+          "time": 60
+        },
+        {
+          "id": "fin-e-5",
+          "question": "Which is generally the safest place to keep your emergency fund?",
+          "options": ["Stock market", "Savings account", "Cryptocurrency", "Real estate"],
+          "answer": 1,
+          "time": 60
+        },
+        {
+          "id": "fin-e-6",
+          "question": "Which of these is considered an asset?",
+          "options": ["Loan", "Car", "Credit card debt", "Monthly rent"],
+          "answer": 1,
+          "time": 60
+        },
+        {
+          "id": "fin-e-7",
+          "question": "What does APR stand for in credit terms?",
+          "options": ["Annual Percentage Rate", "Applied Payment Ratio", "Average Profit Return", "Annual Payment Requirement"],
+          "answer": 0,
+          "time": 60
+        },
+        {
+          "id": "fin-e-8",
+          "question": "Which of these is an example of passive income?",
+          "options": ["Freelancing", "Dividends from stocks", "Full-time job", "Part-time tutoring"],
+          "answer": 1,
+          "time": 60
+        },
+        {
+          "id": "fin-e-9",
+          "question": "What is a credit score mainly used for?",
+          "options": ["Determining salary", "Evaluating loan eligibility", "Calculating tax refunds", "Tracking spending habits"],
+          "answer": 1,
+          "time": 60
+        },
+        {
+          "id": "fin-e-10",
+          "question": "Which of these is a short-term financial goal?",
+          "options": ["Buying a house", "Retirement savings", "Paying off monthly bills", "Building a college fund"],
+          "answer": 2,
+          "time": 60
+        }
+      ],
+      "normal": [
+        {
+          "id": "fin-n-1",
+          "question": "What is diversification in investing?",
+          "options": [
+            "Investing in one company only",
+            "Spreading investments across different assets",
+            "Avoiding all risky investments",
+            "Selling all investments regularly"
+          ],
+          "answer": 1,
+          "time": 55
+        },
+        {
+          "id": "fin-n-2",
+          "question": "Which of the following typically has the lowest risk?",
+          "options": ["Bonds", "Stocks", "Real estate", "Cryptocurrency"],
+          "answer": 0,
+          "time": 55
+        },
+        {
+          "id": "fin-n-3",
+          "question": "What does compound interest mean?",
+          "options": [
+            "Interest only on the original amount",
+            "Interest on the principal and previous interest",
+            "Interest that decreases over time",
+            "A fixed interest rate"
+          ],
+          "answer": 1,
+          "time": 55
+        },
+        {
+          "id": "fin-n-4",
+          "question": "Which of these is considered a retirement account?",
+          "options": ["401(k)", "Checking account", "Credit card", "PayPal"],
+          "answer": 0,
+          "time": 55
+        },
+        {
+          "id": "fin-n-5",
+          "question": "What does liquidity mean in finance?",
+          "options": [
+            "Ability to earn interest",
+            "Ease of converting assets to cash",
+            "Risk of losing money",
+            "Company’s net worth"
+          ],
+          "answer": 1,
+          "time": 55
+        },
+        {
+          "id": "fin-n-6",
+          "question": "Which is an example of a long-term investment?",
+          "options": ["Day trading", "Cryptocurrency speculation", "Retirement fund", "Weekly savings"],
+          "answer": 2,
+          "time": 55
+        },
+        {
+          "id": "fin-n-7",
+          "question": "What is dollar-cost averaging?",
+          "options": [
+            "Investing a fixed amount regularly regardless of price",
+            "Investing only when prices are low",
+            "Selling shares slowly to average returns",
+            "Converting investments into dollars"
+          ],
+          "answer": 0,
+          "time": 55
+        },
+        {
+          "id": "fin-n-8",
+          "question": "What is inflation?",
+          "options": [
+            "Decrease in product prices",
+            "Increase in general price levels over time",
+            "Government budget cuts",
+            "Growth in investment returns"
+          ],
+          "answer": 1,
+          "time": 55
+        },
+        {
+          "id": "fin-n-9",
+          "question": "Which type of insurance covers medical expenses?",
+          "options": ["Health insurance", "Life insurance", "Auto insurance", "Home insurance"],
+          "answer": 0,
+          "time": 55
+        },
+        {
+          "id": "fin-n-10",
+          "question": "Which investment generally carries the highest long-term growth potential?",
+          "options": ["Stocks", "Savings account", "Bonds", "Certificates of Deposit (CDs)"],
+          "answer": 0,
+          "time": 55
+        }
+      ],
+      "hard": [
+        {
+          "id": "fin-h-1",
+          "question": "What does the Price-to-Earnings (P/E) ratio measure?",
+          "options": [
+            "Company’s profit per employee",
+            "Company valuation compared to earnings",
+            "Return on shareholder equity",
+            "Debt-to-equity ratio"
+          ],
+          "answer": 1,
+          "time": 45
+        },
+        {
+          "id": "fin-h-2",
+          "question": "What is an ETF (Exchange-Traded Fund)?",
+          "options": [
+            "A mutual fund traded like a stock",
+            "A government savings bond",
+            "A type of retirement account",
+            "A short-term loan"
+          ],
+          "answer": 0,
+          "time": 45
+        },
+        {
+          "id": "fin-h-3",
+          "question": "What does 'market capitalization' mean?",
+          "options": [
+            "Total company profits",
+            "Value of outstanding shares",
+            "Government tax collection",
+            "Company’s debt"
+          ],
+          "answer": 1,
+          "time": 45
+        },
+        {
+          "id": "fin-h-4",
+          "question": "Which investment strategy focuses on undervalued stocks?",
+          "options": ["Growth investing", "Value investing", "Momentum investing", "Day trading"],
+          "answer": 1,
+          "time": 45
+        },
+        {
+          "id": "fin-h-5",
+          "question": "What does the term 'asset allocation' refer to?",
+          "options": [
+            "Distribution of investments among asset classes",
+            "Assigning assets to company departments",
+            "Tracking asset depreciation",
+            "Government tax allocation"
+          ],
+          "answer": 0,
+          "time": 45
+        },
+        {
+          "id": "fin-h-6",
+          "question": "What does beta measure in investing?",
+          "options": [
+            "A stock’s volatility relative to the market",
+            "Company’s profit margin",
+            "Bond interest rates",
+            "Dividend payout ratio"
+          ],
+          "answer": 0,
+          "time": 45
+        },
+        {
+          "id": "fin-h-7",
+          "question": "Which bond type is backed by the government?",
+          "options": ["Treasury bonds", "Corporate bonds", "Municipal bonds", "Junk bonds"],
+          "answer": 0,
+          "time": 45
+        },
+        {
+          "id": "fin-h-8",
+          "question": "What is the main risk of over-leveraging in investments?",
+          "options": [
+            "Higher transaction fees",
+            "Greater potential losses",
+            "Reduced liquidity",
+            "Lower dividend payments"
+          ],
+          "answer": 1,
+          "time": 45
+        },
+        {
+          "id": "fin-h-9",
+          "question": "What is a dividend yield?",
+          "options": [
+            "Ratio of dividends to stock price",
+            "Percentage of company profits kept",
+            "Company’s annual growth rate",
+            "Bond repayment rate"
+          ],
+          "answer": 0,
+          "time": 45
+        },
+        {
+          "id": "fin-h-10",
+          "question": "What does 'hedging' mean in finance?",
+          "options": [
+            "Speculating for higher returns",
+            "Reducing risk with offsetting investments",
+            "Maximizing leverage",
+            "Trading only in futures"
+          ],
+          "answer": 1,
+          "time": 45
+        }
+      ]
+    }
+    ,
+        "Public Speaking & Communication Skills": {
+          "easy": [
+            {
+              "id": "ps-e-1",
+              "question": "What is the primary purpose of public speaking?",
+              "options": [
+                "To show off knowledge",
+                "To communicate ideas effectively",
+                "To memorize scripts",
+                "To entertain yourself"
+              ],
+              "answer": 1,
+              "time": 60
+            },
+            {
+              "id": "ps-e-2",
+              "question": "Which of the following helps reduce stage fright?",
+              "options": [
+                "Avoiding practice",
+                "Deep breathing and preparation",
+                "Ignoring the audience",
+                "Speaking as fast as possible"
+              ],
+              "answer": 1,
+              "time": 60
+            },
+            {
+              "id": "ps-e-3",
+              "question": "Why is eye contact important in public speaking?",
+              "options": [
+                "To memorize your notes",
+                "To engage and connect with the audience",
+                "To avoid distractions",
+                "To look intimidating"
+              ],
+              "answer": 1,
+              "time": 60
+            },
+            {
+              "id": "ps-e-4",
+              "question": "What is a common filler word that weakens speeches?",
+              "options": [
+                "Therefore",
+                "Um",
+                "Thus",
+                "However"
+              ],
+              "answer": 1,
+              "time": 60
+            },
+            {
+              "id": "ps-e-5",
+              "question": "Which body language shows confidence?",
+              "options": [
+                "Slouching",
+                "Crossing arms",
+                "Standing tall with open gestures",
+                "Looking at the floor"
+              ],
+              "answer": 2,
+              "time": 60
+            },
+            {
+              "id": "ps-e-6",
+              "question": "What is the ideal tone for professional communication?",
+              "options": [
+                "Aggressive",
+                "Respectful and clear",
+                "Casual slang",
+                "Silent"
+              ],
+              "answer": 1,
+              "time": 60
+            },
+            {
+              "id": "ps-e-7",
+              "question": "What is active listening?",
+              "options": [
+                "Hearing only keywords",
+                "Interrupting often",
+                "Paying full attention and responding thoughtfully",
+                "Thinking about your reply instead"
+              ],
+              "answer": 2,
+              "time": 60
+            },
+            {
+              "id": "ps-e-8",
+              "question": "Which is NOT part of good vocal delivery?",
+              "options": [
+                "Clarity",
+                "Monotone voice",
+                "Projection",
+                "Proper pace"
+              ],
+              "answer": 1,
+              "time": 60
+            },
+            {
+              "id": "ps-e-9",
+              "question": "What helps speeches stay organized?",
+              "options": [
+                "Rambling",
+                "Clear structure with intro, body, and conclusion",
+                "Speaking continuously",
+                "Repeating the same point"
+              ],
+              "answer": 1,
+              "time": 60
+            },
+            {
+              "id": "ps-e-10",
+              "question": "What does a strong handshake communicate?",
+              "options": [
+                "Confidence",
+                "Disinterest",
+                "Nervousness",
+                "Weakness"
+              ],
+              "answer": 0,
+              "time": 60
+            }
+          ],
+          "normal": [
+            {
+              "id": "ps-n-1",
+              "question": "What is the purpose of rhetorical questions in a speech?",
+              "options": [
+                "To confuse the audience",
+                "To engage and make the audience think",
+                "To replace facts",
+                "To fill time"
+              ],
+              "answer": 1,
+              "time": 55
+            },
+            {
+              "id": "ps-n-2",
+              "question": "Which technique makes complex topics easier to understand?",
+              "options": [
+                "Using jargon",
+                "Using analogies and examples",
+                "Reading definitions aloud",
+                "Speaking faster"
+              ],
+              "answer": 1,
+              "time": 55
+            },
+            {
+              "id": "ps-n-3",
+              "question": "What role do pauses play in speeches?",
+              "options": [
+                "They weaken delivery",
+                "They emphasize points and give clarity",
+                "They bore the audience",
+                "They reduce confidence"
+              ],
+              "answer": 1,
+              "time": 55
+            },
+            {
+              "id": "ps-n-4",
+              "question": "What is the difference between verbal and non-verbal communication?",
+              "options": [
+                "Verbal is body language, non-verbal is words",
+                "Verbal uses words, non-verbal uses tone, gestures, and body language",
+                "They are the same",
+                "Verbal is louder than non-verbal"
+              ],
+              "answer": 1,
+              "time": 55
+            },
+            {
+              "id": "ps-n-5",
+              "question": "What is the main benefit of storytelling in speeches?",
+              "options": [
+                "It shortens the speech",
+                "It makes the content memorable and relatable",
+                "It avoids preparation",
+                "It fills silence"
+              ],
+              "answer": 1,
+              "time": 55
+            },
+            {
+              "id": "ps-n-6",
+              "question": "What does audience analysis help with?",
+              "options": [
+                "Choosing jokes",
+                "Tailoring the speech to their needs and interests",
+                "Avoiding eye contact",
+                "Speaking without notes"
+              ],
+              "answer": 1,
+              "time": 55
+            },
+            {
+              "id": "ps-n-7",
+              "question": "Which is a sign of poor listening?",
+              "options": [
+                "Nodding and summarizing",
+                "Interrupting and not maintaining eye contact",
+                "Taking notes",
+                "Clarifying questions"
+              ],
+              "answer": 1,
+              "time": 55
+            },
+            {
+              "id": "ps-n-8",
+              "question": "What does tone of voice mainly affect?",
+              "options": [
+                "The volume of the room",
+                "How the message is perceived emotionally",
+                "The length of the speech",
+                "The grammar"
+              ],
+              "answer": 1,
+              "time": 55
+            },
+            {
+              "id": "ps-n-9",
+              "question": "Why is feedback important in communication?",
+              "options": [
+                "It ends the conversation",
+                "It ensures understanding and improvement",
+                "It avoids responsibility",
+                "It confuses the listener"
+              ],
+              "answer": 1,
+              "time": 55
+            },
+            {
+              "id": "ps-n-10",
+              "question": "What is the elevator pitch technique?",
+              "options": [
+                "A short persuasive summary of an idea or skill",
+                "A long presentation with slides",
+                "A humorous introduction",
+                "A group discussion"
+              ],
+              "answer": 0,
+              "time": 55
+            }
+          ],
+          "hard": [
+            {
+              "id": "ps-h-1",
+              "question": "What is the difference between persuasion and manipulation in communication?",
+              "options": [
+                "Persuasion is ethical influence, manipulation is deceptive",
+                "They are identical",
+                "Manipulation is always positive",
+                "Persuasion is emotional, manipulation is logical"
+              ],
+              "answer": 0,
+              "time": 45
+            },
+            {
+              "id": "ps-h-2",
+              "question": "Which communication model focuses on continuous feedback?",
+              "options": [
+                "Linear model",
+                "Transactional model",
+                "Shannon-Weaver model",
+                "Aristotle’s model"
+              ],
+              "answer": 1,
+              "time": 45
+            },
+            {
+              "id": "ps-h-3",
+              "question": "What does ethos, pathos, and logos represent?",
+              "options": [
+                "Different speech structures",
+                "Aristotle’s modes of persuasion: credibility, emotion, and logic",
+                "Vocal delivery styles",
+                "Body language techniques"
+              ],
+              "answer": 1,
+              "time": 45
+            },
+            {
+              "id": "ps-h-4",
+              "question": "What is code-switching in communication?",
+              "options": [
+                "Switching between programming languages",
+                "Adapting language style based on audience",
+                "Repeating key phrases",
+                "Using technical terms in speeches"
+              ],
+              "answer": 1,
+              "time": 45
+            },
+            {
+              "id": "ps-h-5",
+              "question": "What is paralanguage in communication?",
+              "options": [
+                "The study of gestures",
+                "The non-verbal elements like pitch, tone, and pace",
+                "Written communication style",
+                "The grammar of speech"
+              ],
+              "answer": 1,
+              "time": 45
+            },
+            {
+              "id": "ps-h-6",
+              "question": "Which is a common barrier to effective communication?",
+              "options": [
+                "Active listening",
+                "Noise and assumptions",
+                "Eye contact",
+                "Clear language"
+              ],
+              "answer": 1,
+              "time": 45
+            },
+            {
+              "id": "ps-h-7",
+              "question": "What is the purpose of a persuasive speech?",
+              "options": [
+                "To inform only",
+                "To entertain",
+                "To convince the audience to adopt an idea or action",
+                "To fill time"
+              ],
+              "answer": 2,
+              "time": 45
+            },
+            {
+              "id": "ps-h-8",
+              "question": "Which listening style evaluates arguments critically?",
+              "options": [
+                "Appreciative listening",
+                "Critical listening",
+                "Empathetic listening",
+                "Passive listening"
+              ],
+              "answer": 1,
+              "time": 45
+            },
+            {
+              "id": "ps-h-9",
+              "question": "What is proxemics in communication?",
+              "options": [
+                "The study of personal space and distance in interactions",
+                "The study of vocal projection",
+                "The use of visual aids",
+                "The analysis of written communication"
+              ],
+              "answer": 0,
+              "time": 45
+            },
+            {
+              "id": "ps-h-10",
+              "question": "What is the main challenge of intercultural communication?",
+              "options": [
+                "Time zones",
+                "Language barriers and cultural misunderstandings",
+                "Eye contact",
+                "Volume of speech"
+              ],
+              "answer": 1,
+              "time": 45
+            }
+          ]
+        }
+        ,
+            "Project Management with Agile & Scrum": {
+              "easy": [
+                {
+                  "id": "pm-e-1",
+                  "question": "What is the primary goal of project management?",
+                  "options": [
+                    "To delay deadlines",
+                    "To achieve project objectives within scope, time, and cost",
+                    "To create as many documents as possible",
+                    "To avoid teamwork"
+                  ],
+                  "answer": 1,
+                  "time": 60
+                },
+                {
+                  "id": "pm-e-2",
+                  "question": "Which of these is a project management methodology?",
+                  "options": [
+                    "Agile",
+                    "Waterfall",
+                    "Scrum",
+                    "All of the above"
+                  ],
+                  "answer": 3,
+                  "time": 60
+                },
+                {
+                  "id": "pm-e-3",
+                  "question": "What does Agile focus on?",
+                  "options": [
+                    "Strict documentation",
+                    "Flexibility and iterative development",
+                    "Ignoring customer feedback",
+                    "Long-term upfront planning only"
+                  ],
+                  "answer": 1,
+                  "time": 60
+                },
+                {
+                  "id": "pm-e-4",
+                  "question": "In Scrum, who is responsible for maximizing product value?",
+                  "options": [
+                    "Project Manager",
+                    "Scrum Master",
+                    "Product Owner",
+                    "Stakeholder"
+                  ],
+                  "answer": 2,
+                  "time": 60
+                },
+                {
+                  "id": "pm-e-5",
+                  "question": "What is a sprint in Scrum?",
+                  "options": [
+                    "A project budget",
+                    "A time-boxed iteration for delivering work",
+                    "A planning document",
+                    "A list of risks"
+                  ],
+                  "answer": 1,
+                  "time": 60
+                },
+                {
+                  "id": "pm-e-6",
+                  "question": "Which ceremony reviews the work completed in a sprint?",
+                  "options": [
+                    "Daily Scrum",
+                    "Sprint Review",
+                    "Sprint Planning",
+                    "Retrospective"
+                  ],
+                  "answer": 1,
+                  "time": 60
+                },
+                {
+                  "id": "pm-e-7",
+                  "question": "Which artifact contains the prioritized list of features?",
+                  "options": [
+                    "Sprint Backlog",
+                    "Product Backlog",
+                    "Burndown Chart",
+                    "Kanban Board"
+                  ],
+                  "answer": 1,
+                  "time": 60
+                },
+                {
+                  "id": "pm-e-8",
+                  "question": "Who facilitates Scrum events and removes impediments?",
+                  "options": [
+                    "Scrum Master",
+                    "Product Owner",
+                    "Project Sponsor",
+                    "Stakeholder"
+                  ],
+                  "answer": 0,
+                  "time": 60
+                },
+                {
+                  "id": "pm-e-9",
+                  "question": "Which chart tracks remaining work over time in Scrum?",
+                  "options": [
+                    "Gantt Chart",
+                    "Burndown Chart",
+                    "Risk Chart",
+                    "Flow Diagram"
+                  ],
+                  "answer": 1,
+                  "time": 60
+                },
+                {
+                  "id": "pm-e-10",
+                  "question": "Agile values ______ over processes and tools.",
+                  "options": [
+                    "Individuals and interactions",
+                    "Budget and cost",
+                    "Contracts",
+                    "Rules"
+                  ],
+                  "answer": 0,
+                  "time": 60
+                }
+              ],
+              "normal": [
+                {
+                  "id": "pm-n-1",
+                  "question": "What is the maximum recommended length of a Scrum sprint?",
+                  "options": [
+                    "1 week",
+                    "2 weeks",
+                    "4 weeks",
+                    "3 months"
+                  ],
+                  "answer": 2,
+                  "time": 55
+                },
+                {
+                  "id": "pm-n-2",
+                  "question": "What is the role of the Scrum Master?",
+                  "options": [
+                    "To manage the team",
+                    "To enforce deadlines",
+                    "To coach and facilitate the Scrum process",
+                    "To approve all tasks"
+                  ],
+                  "answer": 2,
+                  "time": 55
+                },
+                {
+                  "id": "pm-n-3",
+                  "question": "What is the difference between a Product Backlog and a Sprint Backlog?",
+                  "options": [
+                    "Product Backlog has long-term priorities, Sprint Backlog has current sprint tasks",
+                    "They are the same",
+                    "Sprint Backlog has risks, Product Backlog has goals",
+                    "Product Backlog is created after sprints"
+                  ],
+                  "answer": 0,
+                  "time": 55
+                },
+                {
+                  "id": "pm-n-4",
+                  "question": "Which Agile principle focuses on delivering working software frequently?",
+                  "options": [
+                    "Customer collaboration",
+                    "Simplicity",
+                    "Iterative delivery",
+                    "Team empowerment"
+                  ],
+                  "answer": 2,
+                  "time": 55
+                },
+                {
+                  "id": "pm-n-5",
+                  "question": "What does a Retrospective focus on?",
+                  "options": [
+                    "Deliverables",
+                    "Improving process and teamwork",
+                    "Budget review",
+                    "Stakeholder approval"
+                  ],
+                  "answer": 1,
+                  "time": 55
+                },
+                {
+                  "id": "pm-n-6",
+                  "question": "What is a user story in Agile?",
+                  "options": [
+                    "A narrative of team progress",
+                    "A simple description of a feature from the user’s perspective",
+                    "A case study",
+                    "A technical specification"
+                  ],
+                  "answer": 1,
+                  "time": 55
+                },
+                {
+                  "id": "pm-n-7",
+                  "question": "What does the term 'velocity' measure in Scrum?",
+                  "options": [
+                    "Team happiness",
+                    "The rate of work completed per sprint",
+                    "Budget efficiency",
+                    "The number of meetings"
+                  ],
+                  "answer": 1,
+                  "time": 55
+                },
+                {
+                  "id": "pm-n-8",
+                  "question": "Which Agile framework uses a Kanban board?",
+                  "options": [
+                    "Scrum",
+                    "XP",
+                    "Lean",
+                    "Kanban"
+                  ],
+                  "answer": 3,
+                  "time": 55
+                },
+                {
+                  "id": "pm-n-9",
+                  "question": "What is timeboxing?",
+                  "options": [
+                    "Allocating fixed time for activities",
+                    "Tracking risks",
+                    "Budget allocation",
+                    "Measuring story points"
+                  ],
+                  "answer": 0,
+                  "time": 55
+                },
+                {
+                  "id": "pm-n-10",
+                  "question": "What is a common disadvantage of Waterfall compared to Agile?",
+                  "options": [
+                    "Too much flexibility",
+                    "Late testing and feedback",
+                    "Customer collaboration",
+                    "Iterative planning"
+                  ],
+                  "answer": 1,
+                  "time": 55
+                }
+              ],
+              "hard": [
+                {
+                  "id": "pm-h-1",
+                  "question": "What does MoSCoW stand for in Agile prioritization?",
+                  "options": [
+                    "Must have, Should have, Could have, Won’t have",
+                    "More scope, Some cost, Work done",
+                    "Managed output, Scope covered, Workflows",
+                    "Monthly scope and work"
+                  ],
+                  "answer": 0,
+                  "time": 45
+                },
+                {
+                  "id": "pm-h-2",
+                  "question": "Which scaling framework is used for large Agile enterprises?",
+                  "options": [
+                    "XP",
+                    "SAFe (Scaled Agile Framework)",
+                    "DSDM",
+                    "PRINCE2"
+                  ],
+                  "answer": 1,
+                  "time": 45
+                },
+                {
+                  "id": "pm-h-3",
+                  "question": "In Scrum, what is the maximum timebox for Daily Standup?",
+                  "options": [
+                    "5 minutes",
+                    "15 minutes",
+                    "30 minutes",
+                    "1 hour"
+                  ],
+                  "answer": 1,
+                  "time": 45
+                },
+                {
+                  "id": "pm-h-4",
+                  "question": "What is the INVEST principle for user stories?",
+                  "options": [
+                    "Independent, Negotiable, Valuable, Estimable, Small, Testable",
+                    "Interactive, Noted, Valid, Effective, Stable, Trusted",
+                    "Important, Necessary, Verified, Efficient, Simple, Tracked",
+                    "Innovation, Negotiation, Vision, Estimation, Structure"
+                  ],
+                  "answer": 0,
+                  "time": 45
+                },
+                {
+                  "id": "pm-h-5",
+                  "question": "Which Agile metric tracks work in progress and cycle time?",
+                  "options": [
+                    "Burnup chart",
+                    "Cumulative Flow Diagram",
+                    "Velocity chart",
+                    "Histogram"
+                  ],
+                  "answer": 1,
+                  "time": 45
+                },
+                {
+                  "id": "pm-h-6",
+                  "question": "What is a Definition of Done (DoD)?",
+                  "options": [
+                    "A checklist that ensures work meets quality standards",
+                    "A deadline",
+                    "A team rulebook",
+                    "A risk list"
+                  ],
+                  "answer": 0,
+                  "time": 45
+                },
+                {
+                  "id": "pm-h-7",
+                  "question": "Which Agile framework is based on extreme programming principles?",
+                  "options": [
+                    "XP",
+                    "Scrum",
+                    "Lean",
+                    "Kanban"
+                  ],
+                  "answer": 0,
+                  "time": 45
+                },
+                {
+                  "id": "pm-h-8",
+                  "question": "What is backlog grooming (refinement)?",
+                  "options": [
+                    "Removing finished tasks",
+                    "Updating and prioritizing backlog items",
+                    "Cleaning project data",
+                    "Ending a sprint"
+                  ],
+                  "answer": 1,
+                  "time": 45
+                },
+                {
+                  "id": "pm-h-9",
+                  "question": "What is the main purpose of a Sprint Retrospective?",
+                  "options": [
+                    "Reviewing deliverables",
+                    "Inspecting and improving processes",
+                    "Assigning budget",
+                    "Meeting stakeholders"
+                  ],
+                  "answer": 1,
+                  "time": 45
+                },
+                {
+                  "id": "pm-h-10",
+                  "question": "Which Agile artifact shows completed and remaining work?",
+                  "options": [
+                    "Burnup chart",
+                    "Burndown chart",
+                    "Kanban board",
+                    "Product backlog"
+                  ],
+                  "answer": 1,
+                  "time": 45
+                }
+              ]
+            }
+          
+            ,
+                "Health, Fitness & Nutrition Fundamentals": {
+                  "easy": [
+                    {
+                      "id": "hf-e-1",
+                      "question": "What is the recommended daily intake of water for most adults?",
+                      "options": [
+                        "1-2 cups",
+                        "4-5 cups",
+                        "8-10 cups",
+                        "15-20 cups"
+                      ],
+                      "answer": 2,
+                      "time": 60
+                    },
+                    {
+                      "id": "hf-e-2",
+                      "question": "Which nutrient is the body’s primary source of energy?",
+                      "options": [
+                        "Proteins",
+                        "Carbohydrates",
+                        "Fats",
+                        "Vitamins"
+                      ],
+                      "answer": 1,
+                      "time": 60
+                    },
+                    {
+                      "id": "hf-e-3",
+                      "question": "Which vitamin is primarily obtained from sunlight exposure?",
+                      "options": [
+                        "Vitamin A",
+                        "Vitamin B12",
+                        "Vitamin C",
+                        "Vitamin D"
+                      ],
+                      "answer": 3,
+                      "time": 60
+                    },
+                    {
+                      "id": "hf-e-4",
+                      "question": "What does BMI stand for?",
+                      "options": [
+                        "Body Mass Index",
+                        "Basic Muscle Indicator",
+                        "Balanced Metabolism Index",
+                        "Body Measurement Indicator"
+                      ],
+                      "answer": 0,
+                      "time": 60
+                    },
+                    {
+                      "id": "hf-e-5",
+                      "question": "Which macronutrient is essential for building muscle?",
+                      "options": [
+                        "Protein",
+                        "Carbohydrates",
+                        "Fats",
+                        "Fiber"
+                      ],
+                      "answer": 0,
+                      "time": 60
+                    },
+                    {
+                      "id": "hf-e-6",
+                      "question": "Which mineral is most important for strong bones?",
+                      "options": [
+                        "Iron",
+                        "Calcium",
+                        "Potassium",
+                        "Magnesium"
+                      ],
+                      "answer": 1,
+                      "time": 60
+                    },
+                    {
+                      "id": "hf-e-7",
+                      "question": "How many minutes of moderate exercise are generally recommended per week?",
+                      "options": [
+                        "30 minutes",
+                        "75 minutes",
+                        "150 minutes",
+                        "300 minutes"
+                      ],
+                      "answer": 2,
+                      "time": 60
+                    },
+                    {
+                      "id": "hf-e-8",
+                      "question": "What is considered a healthy resting heart rate for adults?",
+                      "options": [
+                        "20-40 bpm",
+                        "40-60 bpm",
+                        "60-100 bpm",
+                        "100-120 bpm"
+                      ],
+                      "answer": 2,
+                      "time": 60
+                    },
+                    {
+                      "id": "hf-e-9",
+                      "question": "Which food is a rich source of healthy fats?",
+                      "options": [
+                        "Avocado",
+                        "White bread",
+                        "Candy",
+                        "Soda"
+                      ],
+                      "answer": 0,
+                      "time": 60
+                    },
+                    {
+                      "id": "hf-e-10",
+                      "question": "Which vitamin helps with blood clotting?",
+                      "options": [
+                        "Vitamin A",
+                        "Vitamin B",
+                        "Vitamin K",
+                        "Vitamin E"
+                      ],
+                      "answer": 2,
+                      "time": 60
+                    }
+                  ],
+                  "normal": [
+                    {
+                      "id": "hf-n-1",
+                      "question": "Which type of fat is considered the least healthy?",
+                      "options": [
+                        "Saturated fat",
+                        "Trans fat",
+                        "Monounsaturated fat",
+                        "Polyunsaturated fat"
+                      ],
+                      "answer": 1,
+                      "time": 55
+                    },
+                    {
+                      "id": "hf-n-2",
+                      "question": "Which exercise primarily strengthens the cardiovascular system?",
+                      "options": [
+                        "Weightlifting",
+                        "Yoga",
+                        "Running",
+                        "Stretching"
+                      ],
+                      "answer": 2,
+                      "time": 55
+                    },
+                    {
+                      "id": "hf-n-3",
+                      "question": "Which nutrient helps transport oxygen in the blood?",
+                      "options": [
+                        "Calcium",
+                        "Iron",
+                        "Vitamin C",
+                        "Magnesium"
+                      ],
+                      "answer": 1,
+                      "time": 55
+                    },
+                    {
+                      "id": "hf-n-4",
+                      "question": "What does HIIT stand for in fitness?",
+                      "options": [
+                        "High Intensity Interval Training",
+                        "Health Improvement Internal Therapy",
+                        "Heart Intensive Interval Training",
+                        "High Impact Integrated Training"
+                      ],
+                      "answer": 0,
+                      "time": 55
+                    },
+                    {
+                      "id": "hf-n-5",
+                      "question": "Which diet is high in healthy fats and low in carbs?",
+                      "options": [
+                        "Mediterranean diet",
+                        "Ketogenic diet",
+                        "Paleo diet",
+                        "Vegan diet"
+                      ],
+                      "answer": 1,
+                      "time": 55
+                    },
+                    {
+                      "id": "hf-n-6",
+                      "question": "Which vitamin boosts iron absorption?",
+                      "options": [
+                        "Vitamin A",
+                        "Vitamin B12",
+                        "Vitamin C",
+                        "Vitamin D"
+                      ],
+                      "answer": 2,
+                      "time": 55
+                    },
+                    {
+                      "id": "hf-n-7",
+                      "question": "What is the recommended average daily protein intake for adults?",
+                      "options": [
+                        "0.8 grams per kilogram of body weight",
+                        "2 grams per kilogram of body weight",
+                        "10 grams per day",
+                        "100 grams per day"
+                      ],
+                      "answer": 0,
+                      "time": 55
+                    },
+                    {
+                      "id": "hf-n-8",
+                      "question": "Which part of the body does a plank primarily strengthen?",
+                      "options": [
+                        "Arms",
+                        "Core",
+                        "Legs",
+                        "Back"
+                      ],
+                      "answer": 1,
+                      "time": 55
+                    },
+                    {
+                      "id": "hf-n-9",
+                      "question": "Which nutrient deficiency commonly causes scurvy?",
+                      "options": [
+                        "Vitamin A",
+                        "Vitamin B12",
+                        "Vitamin C",
+                        "Vitamin D"
+                      ],
+                      "answer": 2,
+                      "time": 55
+                    },
+                    {
+                      "id": "hf-n-10",
+                      "question": "Which type of cholesterol is considered 'good'?",
+                      "options": [
+                        "LDL",
+                        "HDL",
+                        "Triglycerides",
+                        "VLDL"
+                      ],
+                      "answer": 1,
+                      "time": 55
+                    }
+                  ],
+                  "hard": [
+                    {
+                      "id": "hf-h-1",
+                      "question": "What is the glycemic index (GI) used to measure?",
+                      "options": [
+                        "The calorie content of food",
+                        "How quickly food raises blood sugar levels",
+                        "The fat percentage in food",
+                        "The protein quality of food"
+                      ],
+                      "answer": 1,
+                      "time": 45
+                    },
+                    {
+                      "id": "hf-h-2",
+                      "question": "What does VO2 max measure?",
+                      "options": [
+                        "Maximum heart rate",
+                        "Maximum oxygen uptake during exercise",
+                        "Lung capacity at rest",
+                        "Blood pressure recovery rate"
+                      ],
+                      "answer": 1,
+                      "time": 45
+                    },
+                    {
+                      "id": "hf-h-3",
+                      "question": "Which hormone regulates blood sugar by lowering glucose levels?",
+                      "options": [
+                        "Glucagon",
+                        "Insulin",
+                        "Adrenaline",
+                        "Cortisol"
+                      ],
+                      "answer": 1,
+                      "time": 45
+                    },
+                    {
+                      "id": "hf-h-4",
+                      "question": "What is the main benefit of omega-3 fatty acids?",
+                      "options": [
+                        "Boosts energy instantly",
+                        "Supports brain and heart health",
+                        "Increases sugar metabolism",
+                        "Reduces calcium absorption"
+                      ],
+                      "answer": 1,
+                      "time": 45
+                    },
+                    {
+                      "id": "hf-h-5",
+                      "question": "What is the function of electrolytes in the body?",
+                      "options": [
+                        "Help with digestion",
+                        "Maintain fluid balance and muscle function",
+                        "Increase bone density",
+                        "Promote fat storage"
+                      ],
+                      "answer": 1,
+                      "time": 45
+                    },
+                    {
+                      "id": "hf-h-6",
+                      "question": "What is sarcopenia?",
+                      "options": [
+                        "Bone density loss",
+                        "Age-related muscle loss",
+                        "Vitamin deficiency",
+                        "High blood sugar"
+                      ],
+                      "answer": 1,
+                      "time": 45
+                    },
+                    {
+                      "id": "hf-h-7",
+                      "question": "What is basal metabolic rate (BMR)?",
+                      "options": [
+                        "Calories burned during exercise",
+                        "Calories burned at rest to maintain vital functions",
+                        "Maximum calories the body can burn in a day",
+                        "Calories burned from digestion"
+                      ],
+                      "answer": 1,
+                      "time": 45
+                    },
+                    {
+                      "id": "hf-h-8",
+                      "question": "Which vitamin deficiency is associated with night blindness?",
+                      "options": [
+                        "Vitamin A",
+                        "Vitamin D",
+                        "Vitamin E",
+                        "Vitamin K"
+                      ],
+                      "answer": 0,
+                      "time": 45
+                    },
+                    {
+                      "id": "hf-h-9",
+                      "question": "What is the role of mitochondria in fitness performance?",
+                      "options": [
+                        "Store glycogen",
+                        "Produce ATP for energy",
+                        "Increase oxygen supply in blood",
+                        "Strengthen muscle fibers"
+                      ],
+                      "answer": 1,
+                      "time": 45
+                    },
+                    {
+                      "id": "hf-h-10",
+                      "question": "Which condition is caused by prolonged deficiency of vitamin D?",
+                      "options": [
+                        "Rickets",
+                        "Scurvy",
+                        "Anemia",
+                        "Beriberi"
+                      ],
+                      "answer": 0,
+                      "time": 45
+                    }
+                  ]
+                },
+              
+                "curveball": [
+                  {
+                    "id": "cb-1",
+                    "question": "What should you do first when encountering a bug in production?",
+                    "options": [
+                      "Immediately deploy a fix",
+                      "Blame the last developer who touched the code",
+                      "Reproduce the issue and assess impact",
+                      "Add more console.log statements"
+                    ],
+                    "answer": 2,
+                    "time": 30
+                  },
+                  {
+                    "id": "cb-2",
+                    "question": "How would you explain technical concepts to a non-technical stakeholder?",
+                    "options": [
+                      "Use complex jargon to sound knowledgeable",
+                      "Avoid the topic entirely",
+                      "Use analogies and simple language",
+                      "Direct them to technical documentation"
+                    ],
+                    "answer": 2,
+                    "time": 30
+                  },
+                  {
+                    "id": "cb-3",
+                    "question": "In an interview, what should you do if you don’t know the answer?",
+                    "options": [
+                      "Stay silent",
+                      "Make up an answer",
+                      "Admit it honestly and explain how you’d find the solution",
+                      "Change the subject"
+                    ],
+                    "answer": 2,
+                    "time": 30
+                  },
+                  {
+                    "id": "cb-4",
+                    "question": "How would you handle a conflict with a teammate?",
+                    "options": [
+                      "Ignore them",
+                      "Escalate immediately to management",
+                      "Communicate directly and resolve respectfully",
+                      "Stop working with them"
+                    ],
+                    "answer": 2,
+                    "time": 30
+                  },
+                  {
+                    "id": "cb-5",
+                    "question": "If given a task outside your expertise, what should you do?",
+                    "options": [
+                      "Refuse immediately",
+                      "Attempt without guidance",
+                      "Seek help and learn as you go",
+                      "Delegate to someone else without trying"
+                    ],
+                    "answer": 2,
+                    "time": 30
+                  },
+                  {
+                    "id": "cb-6",
+                    "question": "What do recruiters value most in behavioral interviews?",
+                    "options": [
+                      "Memorized answers",
+                      "Confidence, clarity, and examples",
+                      "Agreeing with everything",
+                      "Using buzzwords"
+                    ],
+                    "answer": 1,
+                    "time": 30
+                  },
+                  {
+                    "id": "cb-7",
+                    "question": "If an interviewer challenges your answer, what’s the best response?",
+                    "options": [
+                      "Argue strongly",
+                      "Stay calm, clarify, and support your reasoning",
+                      "Change your answer immediately",
+                      "Stay silent"
+                    ],
+                    "answer": 1,
+                    "time": 30
+                  },
+                  {
+                    "id": "cb-8",
+                    "question": "What’s the purpose of asking brainteaser questions in interviews?",
+                    "options": [
+                      "To test memorization",
+                      "To see problem-solving approach",
+                      "To embarrass the candidate",
+                      "To test industry knowledge only"
+                    ],
+                    "answer": 1,
+                    "time": 30
+                  },
+                  {
+                    "id": "cb-9",
+                    "question": "If you realize you gave a wrong answer earlier in an interview, what should you do?",
+                    "options": [
+                      "Ignore it",
+                      "Admit and correct it later politely",
+                      "Blame the interviewer",
+                      "Change the topic"
+                    ],
+                    "answer": 1,
+                    "time": 30
+                  },
+                  {
+                    "id": "cb-10",
+                    "question": "How do you respond when asked about your weaknesses?",
+                    "options": [
+                      "Say you don’t have any",
+                      "List irrelevant flaws",
+                      "Mention a real weakness and explain improvement",
+                      "Avoid answering"
+                    ],
+                    "answer": 2,
+                    "time": 30
+                  },
+                  {
+                    "id": "cb-11",
+                    "question": "How should you react to silence after giving an answer?",
+                    "options": [
+                      "Get nervous and over-explain",
+                      "Stay calm and wait",
+                      "Ask if your answer was wrong",
+                      "Change your answer quickly"
+                    ],
+                    "answer": 1,
+                    "time": 30
+                  },
+                  {
+                    "id": "cb-12",
+                    "question": "If you’re late to an interview, what’s the best action?",
+                    "options": [
+                      "Make an excuse",
+                      "Blame traffic only",
+                      "Apologize sincerely and stay professional",
+                      "Ignore it"
+                    ],
+                    "answer": 2,
+                    "time": 30
+                  },
+                  {
+                    "id": "cb-13",
+                    "question": "Why do interviewers ask situational questions?",
+                    "options": [
+                      "To test past job titles",
+                      "To check adaptability and problem-solving",
+                      "To see GPA scores",
+                      "To test technical definitions only"
+                    ],
+                    "answer": 1,
+                    "time": 30
+                  },
+                  {
+                    "id": "cb-14",
+                    "question": "How do you handle multiple interviews in one day?",
+                    "options": [
+                      "Get frustrated",
+                      "Stay organized and consistent",
+                      "Answer differently each time",
+                      "Complain to recruiters"
+                    ],
+                    "answer": 1,
+                    "time": 30
+                  },
+                  {
+                    "id": "cb-15",
+                    "question": "What should you avoid when negotiating salary?",
+                    "options": [
+                      "Researching salary ranges",
+                      "Discussing benefits",
+                      "Accepting without consideration",
+                      "Being polite and assertive"
+                    ],
+                    "answer": 2,
+                    "time": 30
+                  },
+                  {
+                    "id": "cb-16",
+                    "question": "If you’re asked about a failure, what’s the right approach?",
+                    "options": [
+                      "Say you never fail",
+                      "Blame others",
+                      "Explain the failure and what you learned",
+                      "Skip the question"
+                    ],
+                    "answer": 2,
+                    "time": 30
+                  },
+                  {
+                    "id": "cb-17",
+                    "question": "How can you stand out in virtual interviews?",
+                    "options": [
+                      "Test technology beforehand, stay clear and professional",
+                      "Keep camera off",
+                      "Interrupt often",
+                      "Sit in a noisy place"
+                    ],
+                    "answer": 0,
+                    "time": 30
+                  },
+                  {
+                    "id": "cb-18",
+                    "question": "How do you deal with a question you didn’t prepare for?",
+                    "options": [
+                      "Panic",
+                      "Refuse to answer",
+                      "Think out loud and structure your response",
+                      "Stay silent"
+                    ],
+                    "answer": 2,
+                    "time": 30
+                  },
+                  {
+                    "id": "cb-19",
+                    "question": "What’s the best way to close an interview?",
+                    "options": [
+                      "Say nothing",
+                      "Ask about next steps and thank them",
+                      "Complain about the process",
+                      "Leave abruptly"
+                    ],
+                    "answer": 1,
+                    "time": 30
+                  },
+                  {
+                    "id": "cb-20",
+                    "question": "What is the STAR method in interviews?",
+                    "options": [
+                      "Situation, Task, Action, Result",
+                      "Strategy, Time, Action, Response",
+                      "Skill, Task, Achievement, Result",
+                      "Standard Technical Answer Routine"
+                    ],
+                    "answer": 0,
+                    "time": 30
+                  },
+                  {
+                    "id": "cb-21",
+                    "question": "If you are overqualified for a role, how should you explain your interest?",
+                    "options": [
+                      "Say you just want any job",
+                      "Emphasize alignment with role and long-term goals",
+                      "Avoid answering",
+                      "Blame previous employers"
+                    ],
+                    "answer": 1,
+                    "time": 30
+                  },
+                  {
+                    "id": "cb-22",
+                    "question": "What’s the purpose of asking about leadership experiences?",
+                    "options": [
+                      "To see if you memorized examples",
+                      "To understand decision-making and influence",
+                      "To test technical coding ability",
+                      "To check resume spelling"
+                    ],
+                    "answer": 1,
+                    "time": 30
+                  },
+                  {
+                    "id": "cb-23",
+                    "question": "How should you answer when asked why you left your last job?",
+                    "options": [
+                      "Criticize old manager",
+                      "Focus on positive growth opportunities",
+                      "Blame coworkers",
+                      "Avoid answering"
+                    ],
+                    "answer": 1,
+                    "time": 30
+                  },
+                  {
+                    "id": "cb-24",
+                    "question": "How do you respond to 'Where do you see yourself in 5 years?'",
+                    "options": [
+                      "Say you don’t know",
+                      "Give a clear growth-oriented answer",
+                      "Talk about unrelated hobbies",
+                      "Refuse to answer"
+                    ],
+                    "answer": 1,
+                    "time": 30
+                  },
+                  {
+                    "id": "cb-25",
+                    "question": "What’s the risk of over-preparing interview answers?",
+                    "options": [
+                      "Sounding rehearsed and unnatural",
+                      "Being confident",
+                      "Being clear",
+                      "Remembering key points"
+                    ],
+                    "answer": 0,
+                    "time": 30
+                  },
+                  {
+                    "id": "cb-26",
+                    "question": "What should you bring to an in-person interview?",
+                    "options": [
+                      "Resume copies, ID, notepad",
+                      "Nothing",
+                      "Snacks",
+                      "Gifts for interviewer"
+                    ],
+                    "answer": 0,
+                    "time": 30
+                  },
+                  {
+                    "id": "cb-27",
+                    "question": "If asked an illegal question (e.g., about religion), what should you do?",
+                    "options": [
+                      "Answer anyway",
+                      "Politely redirect to job-related skills",
+                      "Get angry",
+                      "End the interview immediately"
+                    ],
+                    "answer": 1,
+                    "time": 30
+                  },
+                  {
+                    "id": "cb-28",
+                    "question": "How should you dress for an interview if unsure?",
+                    "options": [
+                      "Overdress slightly",
+                      "Underdress",
+                      "Wear casual clothes",
+                      "Ignore appearance"
+                    ],
+                    "answer": 0,
+                    "time": 30
+                  },
+                  {
+                    "id": "cb-29",
+                    "question": "Why do interviewers ask about teamwork experiences?",
+                    "options": [
+                      "To check communication and collaboration skills",
+                      "To test technical skills only",
+                      "To see GPA",
+                      "To check fashion sense"
+                    ],
+                    "answer": 0,
+                    "time": 30
+                  },
+                  {
+                    "id": "cb-30",
+                    "question": "What’s the best way to handle a long pause when thinking?",
+                    "options": [
+                      "Fill silence with random words",
+                      "Stay calm and collect thoughts",
+                      "Apologize repeatedly",
+                      "Panic"
+                    ],
+                    "answer": 1,
+                    "time": 30
+                  }
+                ]
+              
+
+  } 
+  
+  

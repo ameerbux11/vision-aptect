@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Subscription - SkillOra</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="particles"></canvas>
+  
+  <!-- Top Bar -->
+  <div class="top-bar" data-aos="fade-down">
+    <div class="top-left">
+      <div class="logo">
+        <i class="fas fa-graduation-cap"></i>
+         <a href="index.html"> <span>SkillOra</span> </a>
+      </div>
+    </div>
+
+    <div class="top-center">
+      <button class="click-toggle" onclick="toggleSecondBar()">
+        <i class="fas fa-angle-down"></i>
+      </button>
+    </div>
+
+    <div class="top-right">
+      <div class="search-container">
+        <button class="search-icon" onclick="toggleSearch()">
+          <i class="fas fa-search"></i>
+        </button>
+        <input type="text" placeholder="Search..." id="search-input" />
+      </div>
+      <button class="btn login" onclick="toggleLogin()">Login</button>
+      <button class="btn signup" onclick="toggleSignup()">Sign Up</button>
+    </div>
+  </div>
+
+  <!-- Second Bar -->
+  <div id="second-bar" class="second-bar" data-aos="fade-down" data-aos-delay="150">
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="taking.html">About Us</a>
+      <a href="review.html">Review</a>
+      <a href="contact.html">Contact</a>
+      <a href="subscription.html" class="active">Subscription</a>
+    </div>
+    
+    <div class="nav-controls">
+      <!-- Theme Toggle Button -->
+      <div class="theme-toggle-container">
+        <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle dark mode">
+          <i class="fas fa-moon" id="themeIcon"></i>
+          <span id="themeText">Dark Mode</span>
+        </button>
+      </div>
+      
+      <div class="career-btn">
+        <button class="btn career" onclick="openSidebar()">Career</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Career Sidebar -->
+  <div id="career-sidebar" class="career-sidebar" data-aos="fade-right">
+    <div class="sidebar-header">
+      <h3 id="sidebar-title">interviwer Subjects</h3>
+      <span class="close-btn" onclick="closeSidebar()">✖</span>
+    </div>
+    
+    <!-- interviwer Subjects -->
+    <ul id="interviwer-subjects" class="subject-list" data-aos="fade-up">
+      <li><a href="game.html?course=Full-Stack%20Web%20Development">Web Development</a></li>
+      <li><a href="game.html?course=Data%20Science%20%26%20Analytics">Data Science</a></li>
+      <li><a href="game.html?course=Cloud%20Computing%20with%20AWS%20%26%20Azure">Computer Science</a></li>
+      <li><a href="game.html?course=Software%20Engineering">Machine Learning</a></li>
+      <li><a href="game.html?course=Cybersecurity%20Fundamentals">Networking</a></li>
+      <li><a href="game.html?course=Digital%20Marketing%20%26%20SEO%20Mastery">Cyber Security</a></li>
+      <li><a href="game.html?course=Financial%20Literacy%20%26%20Investing%20Basics">Software Engineering</a></li>
+      <li><a href="game.html?course=Public%20Speaking%20%26%20Communication%20Skills">Cloud Computing</a></li>
+      <li><a href="game.html?course=Project%20Management%20with%20Agile%20%26%20Scrum">Mobile App Development</a></li>
+      <li><a href="game.html?course=Database%20Management">Database Management</a></li>
+    </ul>
+    
+    <!-- interviwee Subjects -->
+    <ul id="interviwee-subjects" class="subject-list" data-aos="fade-up" data-aos-delay="150">
+      <li><a href="interviewer.html?course=Full-Stack%20Web%20Development">Web Development</a></li>
+      <li><a href="interviewer.html?course=Data%20Science%20%26%20Analytics">Data Science</a></li>
+      <li><a href="interviewer.html?course=Cybersecurity%20Fundamentals">Computer Science</a></li>
+      <li><a href="interviewer.html?course=Cloud%20Computing%20with%20AWS%20%26%20Azure">Machine Learning</a></li>
+      <li><a href="interviewer.html?course=Digital%20Marketing%20%26%20SEO%20Mastery">Networking</a></li>
+      <li><a href="interviewer.html?course=Graphic%20Design%20%26%20UI%2FUX%20Essentials">Cyber Security</a></li>
+      <li><a href="interviewer.html?course=Financial%20Literacy%20%26%20Investing%20Basics">Software Engineering</a></li>
+      <li><a href="interviewer.html?course=Public%20Speaking%20%26%20Communication%20Skills">Cloud Computing</a></li>
+      <li><a href="interviewer.html?course=Project%20Management%20with%20Agile%20%26%20Scrum">Mobile App Development</a></li>
+      <li><a href="interviewer.html?course=Health%2C%20Fitness%20%26%20Nutrition%20Fundamentals">Database Management</a></li>
+    </ul>
+  </div>
+
+  <!-- Subscription Section -->
+  <section class="subscription-section">
+    <div class="container">
+      <div class="subscription-header" data-aos="fade-up">
+        <h2>Choose Your Learning Plan</h2>
+        <p>Select the subscription that fits your learning goals and budget. All plans include access to our extensive interview preparation resources.</p>
+      </div>
+      
+      <div class="plans-container">
+        <!-- Basic Plan -->
+        <div class="plan-card" data-aos="flip-left">
+          <div class="plan-header">
+            <h3 class="plan-name">Basic</h3>
+            <div class="plan-price">$19<span class="plan-period">/month</span></div>
+            <p class="plan-period">Billed annually or $24 month-to-month</p>
+          </div>
+          <div class="plan-description">
+            Perfect for beginners starting their interview preparation journey
+          </div>
+          <div class="plan-features">
+            <ul>
+              <li><i class="fas fa-check"></i> Access to 500+ MCQs</li>
+              <li><i class="fas fa-check"></i> 5 Subject Areas</li>
+              <li><i class="fas fa-check"></i> Basic Interview Tips</li>
+              <li><i class="fas fa-check"></i> Email Support</li>
+              <li class="disabled"><i class="fas fa-times"></i> Mock Interviews</li>
+              <li class="disabled"><i class="fas fa-times"></i> Advanced Topics</li>
+              <li class="disabled"><i class="fas fa-times"></i> Personalized Feedback</li>
+              <li class="disabled"><i class="fas fa-times"></i> Certification</li>
+            </ul>
+          </div>
+          <div class="plan-actions">
+            <button class="btn-subscribe secondary">Get Started</button>
+          </div>
+        </div>
+        
+        <!-- Pro Plan -->
+        <div class="plan-card popular" data-aos="zoom-in" data-aos-delay="200">
+          <div class="popular-badge">Most Popular</div>
+          <div class="plan-header">
+            <h3 class="plan-name">Pro</h3>
+            <div class="plan-price">$39<span class="plan-period">/month</span></div>
+            <p class="plan-period">Billed annually or $49 month-to-month</p>
+          </div>
+          <div class="plan-description">
+            Our most popular plan for serious job seekers
+          </div>
+          <div class="plan-features">
+            <ul>
+              <li><i class="fas fa-check"></i> Access to 2000+ MCQs</li>
+              <li><i class="fas fa-check"></i> 12 Subject Areas</li>
+              <li><i class="fas fa-check"></i> Advanced Interview Strategies</li>
+              <li><i class="fas fa-check"></i> Priority Email & Chat Support</li>
+              <li><i class="fas fa-check"></i> 5 Mock Interviews per Month</li>
+              <li><i class="fas fa-check"></i> Advanced Topics & Case Studies</li>
+              <li class="disabled"><i class="fas fa-times"></i> Personalized Feedback</li>
+              <li class="disabled"><i class="fas fa-times"></i> Certification</li>
+            </ul>
+          </div>
+          <div class="plan-actions">
+            <button class="btn-subscribe">Get Started</button>
+          </div>
+        </div>
+        
+        <!-- Premium Plan -->
+        <div class="plan-card" data-aos="flip-right" data-aos-delay="300">
+          <div class="plan-header">
+            <h3 class="plan-name">Premium</h3>
+            <div class="plan-price">$79<span class="plan-period">/month</span></div>
+            <p class="plan-period">Billed annually or $99 month-to-month</p>
+          </div>
+          <div class="plan-description">
+            Complete preparation with personalized coaching
+          </div>
+          <div class="plan-features">
+            <ul>
+              <li><i class="fas fa-check"></i> Unlimited MCQs</li>
+              <li><i class="fas fa-check"></i> All Subject Areas</li>
+              <li><i class="fas fa-check"></i> Expert Interview Coaching</li>
+              <li><i class="fas fa-check"></i> 24/7 Priority Support</li>
+              <li><i class="fas fa-check"></i> Unlimited Mock Interviews</li>
+              <li><i class="fas fa-check"></i> All Advanced Topics</li>
+              <li><i class="fas fa-check"></i> Personalized Feedback & Analysis</li>
+              <li><i class="fas fa-check"></i> SkillOra Certification</li>
+            </ul>
+          </div>
+          <div class="plan-actions">
+            <button class="btn-subscribe secondary">Get Started</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Section -->
+      <div class="subscription-faq-section" data-aos="fade-up">
+        <h3>Frequently Asked Questions</h3>
+        <div class="subscription-faq-container">
+          <div class="subscription-faq-item" data-aos="fade-up">
+            <div class="subscription-faq-question">
+              <span>Can I change my plan later?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="subscription-faq-answer">
+              <p>Yes, you can upgrade or downgrade your plan at any time...</p>
+            </div>
+          </div>
+
+          <div class="subscription-faq-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="subscription-faq-question">
+              <span>Do you offer a free trial?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="subscription-faq-answer">
+              <p>Yes, we offer a 7-day free trial for our Pro plan...</p>
+            </div>
+          </div>
+
+          <div class="subscription-faq-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="subscription-faq-question">
+              <span>What payment methods do you accept?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="subscription-faq-answer">
+              <p>We accept all major credit cards, PayPal, and bank transfers...</p>
+            </div>
+          </div>
+
+          <div class="subscription-faq-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="subscription-faq-question">
+              <span>Can I cancel my subscription anytime?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="subscription-faq-answer">
+              <p>Yes, you can cancel your subscription at any time...</p>
+            </div>
+          </div>
+
+          <div class="subscription-faq-item" data-aos="fade-up" data-aos-delay="400">
+            <div class="subscription-faq-question">
+              <span>Are the mock interviews conducted by humans?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="subscription-faq-answer">
+              <p>Yes, mock interviews are conducted by experienced professionals...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" data-aos="fade-up" data-aos-offset="50">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>We help candidates prepare and excel in their interviews...</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="taking.html">About Us</a></li>
+          <li><a href="review.html">Review</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="subscription.html">Subscription</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:info@skillora.com">info@skillora.com</a></p>
+        <p>Phone: <a href="tel:+923001234567">+92-300-1234567</a></p>
+        <p>Location: Hyderabad, Pakistan</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <div class="social-icons">
+          <a href="https://www.facebook.com/yourpage" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/yourprofile" target="_blank" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/yourprofile" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/yourchannel" target="_blank" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+        </div>
+      </div>
+    </div>
+  
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100,
+    });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>

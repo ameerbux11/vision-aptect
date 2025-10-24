@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - SkillOra</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <canvas id="particles"></canvas>
+  
+  <!-- Top Bar -->
+  <div class="top-bar" data-aos="fade-down">
+    <div class="top-left">
+      <div class="logo">
+        <i class="fas fa-graduation-cap"></i>
+       <a href="index.html"> <span>SkillOra</span> </a>
+      </div>
+    </div>
+
+    <div class="top-center">
+      <button class="click-toggle" onclick="toggleSecondBar()">
+        <i class="fas fa-angle-down"></i>
+      </button>
+    </div>
+
+    <div class="top-right">
+      <div class="search-container" data-aos="fade-left">
+        <button class="search-icon" onclick="toggleSearch()">
+          <i class="fas fa-search"></i>
+        </button>
+        <input type="text" placeholder="Search..." id="search-input" />
+      </div>
+      <button class="btn login" onclick="toggleLogin()" data-aos="zoom-in">Login</button>
+      <button class="btn signup" onclick="toggleSignup()" data-aos="zoom-in" data-aos-delay="100">Sign Up</button>
+    </div>
+  </div>
+
+  <!-- Second Bar -->
+  <div id="second-bar" class="second-bar" data-aos="fade-down" data-aos-delay="200">
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="taking.html">About Us</a>
+      <a href="review.html">Review</a>
+      <a href="contact.html">Contact</a>
+      <a href="subscription.html">Subscription</a>
+    </div>
+    
+    <div class="nav-controls">
+      <div class="theme-toggle-container">
+        <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle dark mode">
+          <i class="fas fa-moon" id="themeIcon"></i>
+          <span id="themeText">Dark Mode</span>
+        </button>
+      </div>
+      
+      <div class="career-btn">
+        <button class="btn career" onclick="openSidebar()">Career</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Career Sidebar -->
+  <div id="career-sidebar" class="career-sidebar" data-aos="fade-right">
+    <div class="sidebar-header">
+      <h3 id="sidebar-title">interviwer Subjects</h3>
+      <span class="close-btn" onclick="closeSidebar()">✖</span>
+    </div>
+    
+    <!-- interviwer Subjects -->
+    <ul id="interviwer-subjects" class="subject-list">
+      <li><a href="game.html?course=Full-Stack%20Web%20Development">Web Development</a></li>
+      <li><a href="game.html?course=Data%20Science%20%26%20Analytics">Data Science</a></li>
+      <li><a href="game.html?course=Cloud%20Computing%20with%20AWS%20%26%20Azure">Computer Science</a></li>
+      <li><a href="game.html?course=Software%20Engineering">Machine Learning</a></li>
+      <li><a href="game.html?course=Cybersecurity%20Fundamentals">Networking</a></li>
+      <li><a href="game.html?course=Digital%20Marketing%20%26%20SEO%20Mastery">Cyber Security</a></li>
+      <li><a href="game.html?course=Financial%20Literacy%20%26%20Investing%20Basics">Software Engineering</a></li>
+      <li><a href="game.html?course=Public%20Speaking%20%26%20Communication%20Skills">Cloud Computing</a></li>
+      <li><a href="game.html?course=Project%20Management%20with%20Agile%20%26%20Scrum">Mobile App Development</a></li>
+      <li><a href="game.html?course=Database%20Management">Database Management</a></li>
+    </ul>
+    
+    <!-- interviwee Subjects -->
+    <ul id="interviwee-subjects" class="subject-list">
+      <li><a href="interviewer.html?course=Full-Stack%20Web%20Development">Web Development</a></li>
+      <li><a href="interviewer.html?course=Data%20Science%20%26%20Analytics">Data Science</a></li>
+      <li><a href="interviewer.html?course=Cybersecurity%20Fundamentals">Computer Science</a></li>
+      <li><a href="interviewer.html?course=Cloud%20Computing%20with%20AWS%20%26%20Azure">Machine Learning</a></li>
+      <li><a href="interviewer.html?course=Digital%20Marketing%20%26%20SEO%20Mastery">Networking</a></li>
+      <li><a href="interviewer.html?course=Graphic%20Design%20%26%20UI%2FUX%20Essentials">Cyber Security</a></li>
+      <li><a href="interviewer.html?course=Financial%20Literacy%20%26%20Investing%20Basics">Software Engineering</a></li>
+      <li><a href="interviewer.html?course=Public%20Speaking%20%26%20Communication%20Skills">Cloud Computing</a></li>
+      <li><a href="interviewer.html?course=Project%20Management%20with%20Agile%20%26%20Scrum">Mobile App Development</a></li>
+      <li><a href="interviewer.html?course=Health%2C%20Fitness%20%26%20Nutrition%20Fundamentals">Database Management</a></li>
+    </ul>
+  </div>
+
+  <!-- Contact Hero Section -->
+  <section class="contact-hero" data-aos="fade-up">
+    <div class="container">
+      <h1 data-aos="zoom-in">Get In Touch With Us</h1>
+      <p data-aos="fade-up" data-aos-delay="200">
+        Have questions about our interview preparation services? We're here to help! Reach out to our team and we'll get back to you as soon as possible.
+      </p>
+    </div>
+  </section>
+  
+  <!-- Contact Section -->
+  <section class="contact-section" data-aos="fade-up" data-aos-delay="200">
+    <div class="contact-container">
+      <div class="contact-info" data-aos="fade-right">
+        <div class="contact-card" data-aos="flip-up">
+          <h3><i class="fas fa-map-marker-alt"></i> Our Location</h3>
+          <p>123 Skill Street, Knowledge District</p>
+          <p>Hyderabad, Sindh, Pakistan</p>
+        </div>
+        
+        <div class="contact-card" data-aos="flip-up" data-aos-delay="200">
+          <h3><i class="fas fa-phone"></i> Contact Information</h3>
+          <p>Phone: <a href="tel:+923001234567">+92-310-1234567</a></p>
+          <p>Email: <a href="mailto:info@skillora.com">info@skillora.com</a></p>
+          <p>Support: <a href="mailto:support@skillora.com">support@skillora.com</a></p>
+        </div>
+        
+        <div class="contact-card" data-aos="flip-up" data-aos-delay="400">
+          <h3><i class="fas fa-clock"></i> Business Hours</h3>
+          <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+          <p>Saturday: 10:00 AM - 4:00 PM</p>
+          <p>Sunday: Closed</p>
+        </div>
+      </div>
+      
+      <div class="contact-form" data-aos="fade-left">
+        <h2>Send Us a Message</h2>
+        <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+          <input type="hidden" name="access_key" value="c161cd94-6206-4221-95ce-1eb88f4d6246">
+          
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Map Section -->
+  <section class="map-section" data-aos="zoom-in">
+    <div class="container">
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.738374493187!2d68.349625275583!3d25.3669203774126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394c70c6f5f55a97%3A0xcea0a302053d2c15!2sLatifabad%2C%20Hyderabad%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1728577283819!5m2!1sen!2s" 
+          width="100%" height="400" style="border:10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+  
+  <!-- FAQ Section -->
+  <section class="faq-section" data-aos="fade-up">
+    <div class="container">
+      <h2 data-aos="zoom-in">Frequently Asked Questions</h2>
+      <div class="faq-container">
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            How can SkillOra help me prepare for interviews?
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>SkillOra provides targeted interview preparation with subject-specific MCQs, mock interviews, detailed analytics, and expert-curated questions to help you build confidence and improve your performance.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            What subjects do you cover?
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>We cover a wide range of technical subjects including Web Development, Data Science, Computer Science, Machine Learning, Networking, Cyber Security, Software Engineering, Cloud Computing, Mobile App Development, and Database Management.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            How quickly can I expect a response to my inquiry?
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>We typically respond to all inquiries within 24 hours during business days. For urgent matters, please call our support line for immediate assistance.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            Do you offer corporate training programs?
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, we offer customized corporate training programs designed to meet the specific needs of organizations. Contact our corporate team for more information.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="site-footer" data-aos="fade-up">
+    <div class="footer-container">
+      <div class="footer-section" data-aos="fade-right">
+        <h3>About Us</h3>
+        <p>We help candidates prepare and excel in their interviews through mock sessions, expert guidance, and real-time feedback to ensure career success.</p>
+      </div>
+      <div class="footer-section" data-aos="fade-up" data-aos-delay="200">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="taking.html">About Us</a></li>
+          <li><a href="review.html">Review</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="subscription.html">Subscription</a></li>
+        </ul>
+      </div>
+      <div class="footer-section" data-aos="fade-up" data-aos-delay="400">
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:info@skillora.com">info@skillora.com</a></p>
+        <p>Phone: <a href="tel:+923001234567">+92-300-1234567</a></p>
+        <p>Location: Hyderabad, Pakistan</p>
+      </div>
+      <div class="footer-section" data-aos="fade-left" data-aos-delay="600">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/yourchannel" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom" data-aos="zoom-in">
+      <p>© 2025 SkillOra. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100
+    });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>

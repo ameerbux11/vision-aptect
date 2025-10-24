@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - SkillOra</title>
+
+  <!-- Font Awesome & Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Your Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="particles"></canvas>
+  
+  <!-- Top Bar -->
+  <div class="top-bar" data-aos="fade-down">
+    <div class="top-left">
+      <div class="logo">
+        <i class="fas fa-graduation-cap"></i>
+         <a href="index.html"> <span>SkillOra</span> </a>
+      </div>
+    </div>
+
+    <div class="top-center">
+      <button class="click-toggle" onclick="toggleSecondBar()">
+        <i class="fas fa-angle-down"></i>
+      </button>
+    </div>
+
+    <div class="top-right">
+      <div class="search-container">
+        <button class="search-icon" onclick="toggleSearch()">
+          <i class="fas fa-search"></i>
+        </button>
+        <input type="text" placeholder="Search..." id="search-input" />
+      </div>
+      <button class="btn login" onclick="toggleLogin()">Login</button>
+      <button class="btn signup" onclick="toggleSignup()">Sign Up</button>
+    </div>
+  </div>
+
+  <!-- Second Bar -->
+  <div id="second-bar" class="second-bar" data-aos="fade-down" data-aos-delay="200">
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="taking.html">About Us</a>
+      <a href="review.html">Review</a>
+      <a href="contact.html">Contact</a>
+      <a href="subscription.html">Subscription</a>
+    </div>
+    
+    <div class="nav-controls">
+      <!-- Theme Toggle Button -->
+      <div class="theme-toggle-container">
+        <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle dark mode">
+          <i class="fas fa-moon" id="themeIcon"></i>
+          <span id="themeText">Dark Mode</span>
+        </button>
+      </div>
+      
+      <div class="career-btn">
+        <button class="btn career" onclick="openSidebar()">Career</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Career Sidebar -->
+  <div id="career-sidebar" class="career-sidebar" data-aos="fade-right">
+    <div class="sidebar-header">
+      <h3 id="sidebar-title">interviwer Subjects</h3>
+      <span class="close-btn" onclick="closeSidebar()">✖</span>
+    </div>
+    
+    <!-- interviwer Subjects List -->
+    <ul id="interviwer-subjects" class="subject-list" data-aos="fade-up">
+      <li><a href="game.html?course=Full-Stack%20Web%20Development">Web Development</a></li>
+      <li><a href="game.html?course=Data%20Science%20%26%20Analytics">Data Science</a></li>
+      <li><a href="game.html?course=Cloud%20Computing%20with%20AWS%20%26%20Azure">Computer Science</a></li>
+      <li><a href="game.html?course=Software%20Engineering">Machine Learning</a></li>
+      <li><a href="game.html?course=Cybersecurity%20Fundamentals">Networking</a></li>
+      <li><a href="game.html?course=Digital%20Marketing%20%26%20SEO%20Mastery">Cyber Security</a></li>
+      <li><a href="game.html?course=Financial%20Literacy%20%26%20Investing%20Basics">Software Engineering</a></li>
+      <li><a href="game.html?course=Public%20Speaking%20%26%20Communication%20Skills">Cloud Computing</a></li>
+      <li><a href="game.html?course=Project%20Management%20with%20Agile%20%26%20Scrum">Mobile App Development</a></li>
+      <li><a href="game.html?course=Database%20Management">Database Management</a></li>
+    </ul>
+    
+    <!-- interviwee Subjects List -->
+    <ul id="interviwee-subjects" class="subject-list" data-aos="fade-up" data-aos-delay="200">
+      <li><a href="interviewer.html?course=Full-Stack%20Web%20Development">Web Development</a></li>
+      <li><a href="interviewer.html?course=Data%20Science%20%26%20Analytics">Data Science</a></li>
+      <li><a href="interviewer.html?course=Cybersecurity%20Fundamentals">Computer Science</a></li>
+      <li><a href="interviewer.html?course=Cloud%20Computing%20with%20AWS%20%26%20Azure">Machine Learning</a></li>
+      <li><a href="interviewer.html?course=Digital%20Marketing%20%26%20SEO%20Mastery">Networking</a></li>
+      <li><a href="interviewer.html?course=Graphic%20Design%20%26%20UI%2FUX%20Essentials">Cyber Security</a></li>
+      <li><a href="interviewer.html?course=Financial%20Literacy%20%26%20Investing%20Basics">Software Engineering</a></li>
+      <li><a href="interviewer.html?course=Public%20Speaking%20%26%20Communication%20Skills">Cloud Computing</a></li>
+      <li><a href="interviewer.html?course=Project%20Management%20with%20Agile%20%26%20Scrum">Mobile App Development</a></li>
+      <li><a href="interviewer.html?course=Health%2C%20Fitness%20%26%20Nutrition%20Fundamentals">Database Management</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section" data-aos="fade-up">
+    <div class="container">
+      <h1 data-aos="zoom-in" data-aos-delay="200">Practice Makes Perfect</h1>
+      <p data-aos="fade-up" data-aos-delay="400">
+        Choose your role to start your interview preparation journey. Whether you're preparing for an interview or helping others practice, SkillOra has the tools you need.
+      </p>
+    </div>
+  </section>
+  
+  <!-- Choice Section -->
+  <section class="choice-section">
+    <div class="choice-container">
+      <!-- interviwer Interview Card -->
+      <div class="choice-card interviwer" data-aos="fade-right">
+        <div class="choice-header">
+          <div class="choice-icon">👤</div>
+          <h2>interviwer an Interview</h2>
+          <p>Prepare as a candidate</p>
+        </div>
+        <div class="choice-content">
+          <h3>Practice for Your Dream Job</h3>
+          <p>Get realistic interview practice with our AI-powered platform. Receive immediate feedback on your answers, body language, and communication skills.</p>
+          <p>Choose from various difficulty levels and specific career subjects to tailor your practice sessions.</p>
+          <a href="game.html?course=Full-Stack%20Web%20Development" class="choice-btn">Start Practicing</a>
+        </div>
+      </div>
+      
+      <!-- interviwee Interview Card -->
+      <div class="choice-card interviwee" data-aos="fade-left">
+        <div class="choice-header">
+          <div class="choice-icon">👥</div>
+          <h2>interviwee an Interview</h2>
+          <p>Practice as an interviewer</p>
+        </div>
+        <div class="choice-content">
+          <h3>Hone Your Interviewing Skills</h3>
+          <p>Practice conducting interviews and improve your questioning techniques. Perfect for hiring managers, team leads, and anyone involved in the hiring process.</p>
+          <p>Access a database of questions and evaluation criteria to make your practice sessions effective.</p>
+          <a href="interviewer.html?course=Full-Stack%20Web%20Development" class="choice-btn">Start Interviewing</a>        
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Testimonials Section -->
+  <section class="testimonials-section" data-aos="fade-up">
+    <h2 data-aos="zoom-in">What Our Users Say</h2>
+    <div class="testimonials-container">
+      <div class="testimonial-card" data-aos="flip-left">
+        <div class="testimonial-content">
+          "SkillOra helped me tremendously in preparing for my technical interviews. The realistic practice sessions gave me the confidence I needed to ace my actual interviews."
+        </div>
+        <div class="testimonial-author">
+          <div class="author-avatar">AK</div>
+          <div class="author-info">
+            <h4>Ahmed Khan</h4>
+            <p>Software Engineer at TechSolutions</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial-card" data-aos="flip-up">
+        <div class="testimonial-content">
+          "As a hiring manager, SkillOra's 'interviwee Interview' feature has been invaluable for refining my questioning techniques and evaluation criteria."
+        </div>
+        <div class="testimonial-author">
+          <div class="author-avatar">SR</div>
+          <div class="author-info">
+            <h4>Sarah Riaz</h4>
+            <p>HR Manager at InnovateCorp</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial-card" data-aos="flip-right">
+        <div class="testimonial-content">
+          "The detailed feedback and analytics provided after each practice session helped me identify my weak areas and improve significantly."
+        </div>
+        <div class="testimonial-author">
+          <div class="author-avatar">MJ</div>
+          <div class="author-info">
+            <h4>Maria Javed</h4>
+            <p>Data Analyst at DataWorks</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="site-footer" data-aos="fade-up">
+    <div class="footer-container">
+      <div class="footer-section" data-aos="fade-right">
+        <h3>About Us</h3>
+        <p>
+          We help candidates prepare and excel in their interviews through
+          mock sessions, expert guidance, and real-time feedback to ensure
+          career success.
+        </p>
+      </div>
+      <div class="footer-section" data-aos="fade-up" data-aos-delay="200">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="taking.html">About Us</a></li>
+          <li><a href="review.html">Review</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="subscription.html">Subscription</a></li>
+        </ul>
+      </div>
+      <div class="footer-section" data-aos="fade-up" data-aos-delay="400">
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:info@skillora.com">info@skillora.com</a></p>
+        <p>Phone: <a href="tel:+923001234567">+92-300-1234567</a></p>
+        <p>Location: Hyderabad, Pakistan</p>
+      </div>
+      <div class="footer-section" data-aos="fade-left" data-aos-delay="600">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/yourpage" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/yourprofile" target="_blank" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/yourprofile" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/yourchannel" target="_blank" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Your JavaScript -->
+  <script src="script.js"></script>
+
+  <!-- AOS JS Initialization -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+</html>

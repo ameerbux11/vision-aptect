@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SkillOra - Interview Preparation Platform</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Add AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Particle Canvas -->
+  <canvas id="particles"></canvas>
+  
+  <!-- Top Bar -->
+  <div class="top-bar" data-aos="fade-down" data-aos-duration="800">
+    <div class="top-left">
+      <div class="logo">
+        <i class="fas fa-graduation-cap"></i>
+       <a href="index.html"> <span>SkillOra</span> </a>
+      </div>
+    </div>
+
+    <div class="top-center">
+      <button class="click-toggle" onclick="toggleSecondBar()">
+        <i class="fas fa-angle-down"></i>
+      </button>
+    </div>
+
+    <div class="top-right">
+      <div class="search-container">
+        <button class="search-icon" onclick="toggleSearch()">
+          <i class="fas fa-search"></i>
+        </button>
+        <input type="text" placeholder="Search..." id="search-input" />
+      </div>
+      <button class="btn login" onclick="toggleLogin()">Login</button>
+      <button class="btn signup" onclick="toggleSignup()">Sign Up</button>
+    </div>
+  </div>
+
+  <!-- Second Bar -->
+  <div id="second-bar" class="second-bar" data-aos="fade-down" data-aos-duration="800" data-aos-delay="200">
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="taking.html">About Us</a>
+      <a href="review.html">Review</a>
+      <a href="contact.html">Contact</a>
+      <a href="subscription.html">Subscription</a>
+    </div>
+    
+    <div class="nav-controls">
+      <!-- Theme Toggle Button -->
+      <div class="theme-toggle-container">
+        <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle dark mode">
+          <i class="fas fa-moon" id="themeIcon"></i>
+          <span id="themeText">Dark Mode</span>
+        </button>
+      </div>
+      
+      <div class="career-btn">
+        <button class="btn career" onclick="openSidebar()">Career</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Career Sidebar -->
+  <div id="career-sidebar" class="career-sidebar">
+    <div class="sidebar-header">
+      <h3 id="sidebar-title">interviwer Subjects</h3>
+      <span class="close-btn" onclick="closeSidebar()">✖</span>
+    </div>
+    
+    <!-- interviwer Subjects List -->
+    <ul id="interviwer-subjects" class="subject-list">
+      <li><a href="game.html?course=Full-Stack%20Web%20Development">Web Development</a></li>
+      <li><a href="game.html?course=Data%20Science%20%26%20Analytics">Data Science</a></li>
+      <li><a href="game.html?course=Cloud%20Computing%20with%20AWS%20%26%20Azure">Computer Science</a></li>
+      <li><a href="game.html?course=Software%20Engineering">Machine Learning</a></li>
+      <li><a href="game.html?course=Cybersecurity%20Fundamentals">Networking</a></li>
+      <li><a href="game.html?course=Digital%20Marketing%20%26%20SEO%20Mastery">Cyber Security</a></li>
+      <li><a href="game.html?course=Financial%20Literacy%20%26%20Investing%20Basics">Software Engineering</a></li>
+      <li><a href="game.html?course=Public%20Speaking%20%26%20Communication%20Skills">Cloud Computing</a></li>
+      <li><a href="game.html?course=Project%20Management%20with%20Agile%20%26%20Scrum">Mobile App Development</a></li>
+      <li><a href="game.html?course=Database%20Management">Database Management</a></li>
+    </ul>
+    
+    <!-- interviwee Subjects List -->
+    <ul id="interviwee-subjects" class="subject-list">
+      <li><a href="interviewer.html?course=Full-Stack%20Web%20Development">Web Development</a></li>
+      <li><a href="interviewer.html?course=Data%20Science%20%26%20Analytics">Data Science</a></li>
+      <li><a href="interviewer.html?course=Cybersecurity%20Fundamentals">Computer Science</a></li>
+      <li><a href="interviewer.html?course=Cloud%20Computing%20with%20AWS%20%26%20Azure">Machine Learning</a></li>
+      <li><a href="interviewer.html?course=Digital%20Marketing%20%26%20SEO%20Mastery">Networking</a></li>
+      <li><a href="interviewer.html?course=Graphic%20Design%20%26%20UI%2FUX%20Essentials">Cyber Security</a></li>
+      <li><a href="interviewer.html?course=Financial%20Literacy%20%26%20Investing%20Basics">Software Engineering</a></li>
+      <li><a href="interviewer.html?course=Public%20Speaking%20%26%20Communication%20Skills">Cloud Computing</a></li>
+      <li><a href="interviewer.html?course=Project%20Management%20with%20Agile%20%26%20Scrum">Mobile App Development</a></li>
+      <li><a href="interviewer.html?course=Health%2C%20Fitness%20%26%20Nutrition%20Fundamentals">Database Management</a></li>
+    </ul>
+  </div>
+
+  <!-- Banner Section -->
+  <section class="banner-section">
+    <div class="banner-content" data-aos="fade-right" data-aos-duration="1000">
+      <h1>Crack Your Next Interview</h1>
+      <p>Prepare with confidence and boost your chances of success with expert guidance, curated questions, and mock sessions.</p>
+      <button onclick="window.location.href='interviwer.html'">Get Started</button>
+    </div>
+    <div class="banner-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+      <div class="clip-shape">
+        <img src="img/img2.png" alt="Interview Prep">
+      </div>
+    </div>
+  </section>
+  
+  <!-- Features Section -->
+  <section class="features">
+    <div class="features-container">
+      <h2 data-aos="fade-up" data-aos-duration="800">Why Choose SkillOra?</h2>
+      <div class="features-grid">
+        <div class="feature-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+          <div class="feature-icon">🎯</div>
+          <h3>Targeted Preparation</h3>
+          <p>Subject-specific MCQs and interview questions tailored to your career goals and industry requirements.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+          <div class="feature-icon">📊</div>
+          <h3>Detailed Analytics</h3>
+          <p>Get comprehensive performance reports with your photo and detailed analysis of strengths and weaknesses.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+          <div class="feature-icon">🏆</div>
+          <h3>Expert Curated</h3>
+          <p>Questions designed by industry experts with years of hiring and interviewing experience.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+          <div class="feature-icon">⚡</div>
+          <h3>Real-time Results</h3>
+          <p>Instant feedback and scoring with detailed explanations for every question and answer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Card Section -->
+  <section class="card-section">
+    <h2 data-aos="fade-up" data-aos-duration="800">Interview Difficulty Levels</h2>
+    <div class="card-container">
+      <div class="card easy" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
+        <h3>Easy</h3>
+        <p>Basic level questions to test your fundamental understanding of concepts.</p>
+      </div>
+      <div class="card medium" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+        <h3>Medium</h3>
+        <p>Moderate level questions including problem-solving and logic-based tasks.</p>
+      </div>
+      <div class="card high" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
+        <h3>High</h3>
+        <p>Advanced-level questions that challenge your expertise and critical thinking.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Recent Success Section -->
+  <section class="recent-success">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up" data-aos-duration="800">Recent Successful Interviews</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+        See how our learners aced their interviews and landed their dream jobs!
+      </p>
+      <div class="success-cards">
+        <!-- Card 1 -->
+        <div class="success-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+          <img src="img/5694e173bb4a740507c234167c609479.jpg" alt="Interview Success">
+          <div class="success-content">
+            <h3>Sarah Khan</h3>
+            <p>Front-End Developer</p>
+            <span class="success-date">Hired: July 2025</span>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="success-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+          <img src="img/225f4c968155fcd81cc89182f673583b.jpg" alt="Interview Success">
+          <div class="success-content">
+            <h3>Ali Raza</h3>
+            <p>Cyber Security</p>
+            <span class="success-date">Hired: June 2025</span>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="success-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+          <img src="img/f661ea61616909838a9fbfeda0d2ea14.jpg" alt="Interview Success">
+          <div class="success-content">
+            <h3>Emily Johnson</h3>
+            <p>ASsistent Networking Manager</p>
+            <span class="success-date">Hired: May 2025</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <!-- About -->
+      <div class="footer-section" data-aos="fade-up" data-aos-duration="800">
+        <h3>About Us</h3>
+        <p>
+          We help candidates prepare and excel in their interviews through
+          mock sessions, expert guidance, and real-time feedback to ensure
+          career success.
+        </p>
+      </div>
+      <!-- Quick Links -->
+      <div class="footer-section" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="taking.html">About Us</a></li>
+          <li><a href="review.html">Review</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="subscription.html">Subscription</a></li>
+        </ul>
+      </div>
+      <!-- Contact -->
+      <div class="footer-section" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:info@skillora.com">info@skillora.com</a></p>
+        <p>Phone: <a href="tel:+923001234567">+92-300-1234567</a></p>
+        <p>Location: Hyderabad, Pakistan</p>
+      </div>
+      <!-- Social Links -->
+      <div class="footer-section" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/yourpage" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/yourprofile" target="_blank" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/yourprofile" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/yourchannel" target="_blank" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="footer-bottom">
+      <p>© 2025 SkillOra. All Rights Reserved.</p>
+    </div> -->
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js">
+    
+    
+   
+  </script>
+</body>
+</html>

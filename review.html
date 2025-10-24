@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillOra Reviews</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Optional smooth AOS transitions */
+    [data-aos] {
+      transition-property: transform, opacity !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- Particle Canvas -->
+  <canvas id="particles"></canvas>
+
+  <!-- Top Bar -->
+  <div class="top-bar" data-aos="fade-down">
+    <div class="top-left" data-aos="fade-right">
+      <div class="logo">
+        <i class="fas fa-graduation-cap"></i>
+        <a href="index.html"> <span>SkillOra</span> </a>
+      </div>
+    </div>
+
+    <div class="top-center" data-aos="zoom-in">
+      <button class="click-toggle" onclick="toggleSecondBar()">
+        <i class="fas fa-angle-down"></i>
+      </button>
+    </div>
+
+    <div class="top-right" data-aos="fade-left">
+      <div class="search-container">
+        <button class="search-icon" onclick="toggleSearch()">
+          <i class="fas fa-search"></i>
+        </button>
+        <input type="text" placeholder="Search..." id="search-input" />
+      </div>
+      <button class="btn login" onclick="toggleLogin()">Login</button>
+      <button class="btn signup" onclick="toggleSignup()">Sign Up</button>
+    </div>
+  </div>
+
+  <!-- Second Bar -->
+  <div id="second-bar" class="second-bar" data-aos="fade-down" data-aos-delay="100">
+    <div class="nav-links" data-aos="fade-right">
+      <a href="index.html">Home</a>
+      <a href="taking.html">About Us</a>
+      <a href="review.html">Review</a>
+      <a href="contact.html">Contact</a>
+      <a href="subscription.html">Subscription</a>
+    </div>
+
+    <div class="nav-controls" data-aos="fade-left">
+      <div class="theme-toggle-container">
+        <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle dark mode">
+          <i class="fas fa-moon" id="themeIcon"></i>
+          <span id="themeText">Dark Mode</span>
+        </button>
+      </div>
+
+      <div class="career-btn">
+        <button class="btn career" onclick="openSidebar()">Career</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Career Sidebar -->
+  <div id="career-sidebar" class="career-sidebar" data-aos="fade-right">
+    <div class="sidebar-header">
+      <h3 id="sidebar-title">interviwer Subjects</h3>
+      <span class="close-btn" onclick="closeSidebar()">✖</span>
+    </div>
+
+    <!-- interviwer Subjects List -->
+    <ul id="interviwer-subjects" class="subject-list" data-aos="fade-up">
+      <li><a href="game.html?course=Full-Stack%20Web%20Development">Web Development</a></li>
+      <li><a href="game.html?course=Data%20Science%20%26%20Analytics">Data Science</a></li>
+      <li><a href="game.html?course=Cloud%20Computing%20with%20AWS%20%26%20Azure">Computer Science</a></li>
+      <li><a href="game.html?course=Software%20Engineering">Machine Learning</a></li>
+      <li><a href="game.html?course=Cybersecurity%20Fundamentals">Networking</a></li>
+      <li><a href="game.html?course=Digital%20Marketing%20%26%20SEO%20Mastery">Cyber Security</a></li>
+      <li><a href="game.html?course=Financial%20Literacy%20%26%20Investing%20Basics">Software Engineering</a></li>
+      <li><a href="game.html?course=Public%20Speaking%20%26%20Communication%20Skills">Cloud Computing</a></li>
+      <li><a href="game.html?course=Project%20Management%20with%20Agile%20%26%20Scrum">Mobile App Development</a></li>
+      <li><a href="game.html?course=Database%20Management">Database Management</a></li>
+    </ul>
+
+    <!-- interviwee Subjects List -->
+    <ul id="interviwee-subjects" class="subject-list" data-aos="fade-up" data-aos-delay="200">
+      <li><a href="interviewer.html?course=Full-Stack%20Web%20Development">Web Development</a></li>
+      <li><a href="interviewer.html?course=Data%20Science%20%26%20Analytics">Data Science</a></li>
+      <li><a href="interviewer.html?course=Cybersecurity%20Fundamentals">Computer Science</a></li>
+      <li><a href="interviewer.html?course=Cloud%20Computing%20with%20AWS%20%26%20Azure">Machine Learning</a></li>
+      <li><a href="interviewer.html?course=Digital%20Marketing%20%26%20SEO%20Mastery">Networking</a></li>
+      <li><a href="interviewer.html?course=Graphic%20Design%20%26%20UI%2FUX%20Essentials">Cyber Security</a></li>
+      <li><a href="interviewer.html?course=Financial%20Literacy%20%26%20Investing%20Basics">Software Engineering</a></li>
+      <li><a href="interviewer.html?course=Public%20Speaking%20%26%20Communication%20Skills">Cloud Computing</a></li>
+      <li><a href="interviewer.html?course=Project%20Management%20with%20Agile%20%26%20Scrum">Mobile App Development</a></li>
+      <li><a href="interviewer.html?course=Health%2C%20Fitness%20%26%20Nutrition%20Fundamentals">Database Management</a></li>
+    </ul>
+  </div>
+
+  <!-- Review Hero Section -->
+  <section class="review-hero" data-aos="zoom-in">
+    <div class="container">
+      <h1>What Our Students Say</h1>
+      <p>Read real reviews from SkillOra students who have successfully prepared for their interviews and landed their dream jobs.</p>
+    </div>
+  </section>
+
+  <!-- Overall Rating Section -->
+  <section class="overall-rating" data-aos="fade-up">
+    <div class="container">
+      <div class="rating-container" data-aos="fade-up">
+        <div class="rating-summary" data-aos="zoom-in">
+          <div class="average-rating">4.8</div>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <div class="total-reviews">Based on 1,247 reviews</div>
+        </div>
+
+        <div class="rating-breakdown" data-aos="fade-up" data-aos-delay="200">
+          <div class="rating-bar">
+            <div class="rating-label">5 Stars</div>
+            <div class="bar-container">
+              <div class="bar" style="width: 85%;"></div>
+            </div>
+            <div class="rating-count">1,060</div>
+          </div>
+          <div class="rating-bar">
+            <div class="rating-label">4 Stars</div>
+            <div class="bar-container">
+              <div class="bar" style="width: 12%;"></div>
+            </div>
+            <div class="rating-count">150</div>
+          </div>
+          <div class="rating-bar">
+            <div class="rating-label">3 Stars</div>
+            <div class="bar-container">
+              <div class="bar" style="width: 2%;"></div>
+            </div>
+            <div class="rating-count">25</div>
+          </div>
+          <div class="rating-bar">
+            <div class="rating-label">2 Stars</div>
+            <div class="bar-container">
+              <div class="bar" style="width: 0.5%;"></div>
+            </div>
+            <div class="rating-count">6</div>
+          </div>
+          <div class="rating-bar">
+            <div class="rating-label">1 Star</div>
+            <div class="bar-container">
+              <div class="bar" style="width: 0.5%;"></div>
+            </div>
+            <div class="rating-count">6</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section class="reviews-section" data-aos="fade-up">
+    <div class="container">
+      <h2 data-aos="zoom-in">Recent Reviews</h2>
+      <div class="reviews-container">
+        <div class="review-card" data-aos="flip-left">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <div class="reviewer-avatar">AS</div>
+              <div class="reviewer-details">
+                <h4>Ahmed Siddiqui</h4>
+                <div class="review-date">March 15, 2023</div>
+              </div>
+            </div>
+            <div class="review-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span>5.0</span>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>SkillOra completely transformed my interview preparation...</p>
+          </div>
+          <div class="review-tags">
+            <span class="review-tag">Software Engineering</span>
+            <span class="review-tag">MCQs</span>
+            <span class="review-tag">Interview Success</span>
+          </div>
+        </div>
+
+        <div class="review-card" data-aos="flip-up">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <div class="reviewer-avatar">FS</div>
+              <div class="reviewer-details">
+                <h4>Fatima Shah</h4>
+                <div class="review-date">February 28, 2023</div>
+              </div>
+            </div>
+            <div class="review-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span>5.0</span>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>As a data science student, I found the interview preparation materials incredibly helpful...</p>
+          </div>
+          <div class="review-tags">
+            <span class="review-tag">Data Science</span>
+            <span class="review-tag">Mock Interviews</span>
+            <span class="review-tag">Technical Interviews</span>
+          </div>
+        </div>
+
+        <div class="review-card" data-aos="flip-right">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <div class="reviewer-avatar">BK</div>
+              <div class="reviewer-details">
+                <h4>Bilal Khan</h4>
+                <div class="review-date">January 10, 2023</div>
+              </div>
+            </div>
+            <div class="review-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <span>4.0</span>
+            </div>
+          </div>
+          <div class="review-content">
+            <p>The web development section is comprehensive and up-to-date with current industry standards...</p>
+          </div>
+          <div class="review-tags">
+            <span class="review-tag">Web Development</span>
+            <span class="review-tag">Customer Support</span>
+            <span class="review-tag">Industry Standards</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Write Review Section -->
+  <section class="write-review" data-aos="fade-up">
+    <div class="container">
+      <h2 data-aos="zoom-in">Share Your Experience</h2>
+      <div class="review-form-container" data-aos="fade-up">
+        <form id="reviewForm">
+          <div class="form-group">
+            <label for="reviewer-name">Your Name</label>
+            <input type="text" id="reviewer-name" name="reviewer-name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="reviewer-email">Email Address</label>
+            <input type="email" id="reviewer-email" name="reviewer-email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject/Topic</label>
+            <select id="subject" name="subject" required>
+              <option value="">Select a subject</option>
+              <option value="web-development">Web Development</option>
+              <option value="data-science">Data Science</option>
+              <option value="software-engineering">Software Engineering</option>
+              <option value="cyber-security">Cyber Security</option>
+              <option value="mobile-development">Mobile Development</option>
+              <option value="cloud-computing">Cloud Computing</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="rating">Your Rating</label>
+            <div class="rating-input">
+              <div class="star-rating" id="starRating">
+                <i class="far fa-star" data-rating="1"></i>
+                <i class="far fa-star" data-rating="2"></i>
+                <i class="far fa-star" data-rating="3"></i>
+                <i class="far fa-star" data-rating="4"></i>
+                <i class="far fa-star" data-rating="5"></i>
+              </div>
+              <span id="rating-text">Select a rating</span>
+            </div>
+            <input type="hidden" id="rating-value" name="rating" required>
+          </div>
+
+          <div class="form-group">
+            <label for="review-title">Review Title</label>
+            <input type="text" id="review-title" name="review-title" required>
+          </div>
+
+          <div class="form-group">
+            <label for="review-content">Your Review</label>
+            <textarea id="review-content" name="review-content" placeholder="Share your experience with SkillOra..." required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Submit Review</button>
+          <div id="successMessage" class="success-message">
+            Thank you for your review! It will be published after moderation.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" data-aos="fade-up">
+    <div class="footer-container">
+      <div class="footer-section" data-aos="fade-right">
+        <h3>About Us</h3>
+        <p>We help candidates prepare and excel in their interviews through mock sessions, expert guidance, and real-time feedback to ensure career success.</p>
+      </div>
+      <div class="footer-section" data-aos="fade-up" data-aos-delay="200">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="taking.html">Taking</a></li>
+          <li><a href="review.html">Review</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="subscription.html">Subscription</a></li>
+        </ul>
+      </div>
+      <div class="footer-section" data-aos="fade-up" data-aos-delay="400">
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:info@skillora.com">info@skillora.com</a></p>
+        <p>Phone: <a href="tel:+923001234567">+92-300-1234567</a></p>
+        <p>Location: Hyderabad, Pakistan</p>
+      </div>
+      <div class="footer-section" data-aos="fade-left" data-aos-delay="600">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/yourpage" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/yourprofile" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/yourprofile" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/yourchannel" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100
+    });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
